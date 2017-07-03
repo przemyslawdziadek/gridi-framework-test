@@ -1,0 +1,38 @@
+{
+  "name": "gridi-framework-forms-core",
+  "description": "",
+  "main": "",
+  "authors": [
+    "Przemysław Dziadek <przemyslaw.dziadek@gmail.com>"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "css",
+    "scss",
+    "gridi",
+    "framework",
+    "forms",
+    "core"
+  ],
+  "homepage": "https://github.com/gridi-framework/gridi-framework-forms-core",
+  "ignore": [
+    "**/.*",
+    "**/*.md",
+    "**/*.js",
+    "**/*.json",
+    "node_modules",
+    "bower_components"
+  ],
+  "dependencies": {
+    "gridi-framework-core": "*"
+  },
+  "_release": "030f2f3644",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "030f2f36445a67aec8257cccac1f5626fc9cf83b"
+  },
+  "_source": "https://github.com/gridi-framework/gridi-framework-forms-core.git",
+  "_target": "*",
+  "_originalSource": "gridi-framework-forms-core"
+}

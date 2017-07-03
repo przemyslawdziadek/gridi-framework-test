@@ -1,0 +1,36 @@
+/**
+ * Generate background colors palette
+ *
+ * @function
+ * @param {map} [local-extra-colors-palette=null]         - extension of the standard colors palette to new ones
+ * @param {string|list} [local-skip-palette-colors=null]  - extension of the skip standard colors when generate palete
+ */
+@function get-background-colors-palette($local-extra-colors-palette: null, $local-skip-palette-colors: null) {
+    $generate-palette: get-colors-palette($background-colors-helpers-extra-colors-palette);
+
+    @if type-of($local-extra-colors-palette) == map {
+        $generate-palette: map-merge($generate-palette, $local-extra-colors-palette);
+    }
+
+    @if type-of($background-colors-helpers-skip-colors-palette) == string {
+        $generate-palette: map-remove($generate-palette, $background-colors-helpers-skip-colors-palette);
+    }
+
+    @if type-of($background-colors-helpers-skip-colors-palette) == list {
+        @each $palete-color-prefix in $background-colors-helpers-skip-colors-palette {
+            $generate-palette: map-remove($generate-palette, $palete-color-prefix);
+        }
+    }
+
+    @if type-of($local-skip-palette-colors) == string {
+        $generate-palette: map-remove($generate-palette, $local-skip-palette-colors);
+    }
+
+    @if type-of($local-skip-palette-colors) == list {
+        @each $palete-color-prefix in $local-skip-palette-colors {
+            $generate-palette: map-remove($generate-palette, $palete-color-prefix);
+        }
+    }
+
+    @return $generate-palette;
+}

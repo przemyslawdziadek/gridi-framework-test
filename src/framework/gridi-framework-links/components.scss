@@ -1,0 +1,23 @@
+@include links-style() {
+    cursor: pointer;
+    outline: 0;
+    background-color: transparent;
+    text-decoration: underline;
+    color: $a-color;
+    -webkit-tap-highlight-color: transparent;
+    @include transition($a-transition);
+
+    &:active,
+    &:focus,
+    &:hover {
+        outline: 0;
+    }
+
+    &:hover, &:focus {
+        color: $a-hover-color;
+    }
+
+    * {
+        cursor: pointer;
+    }
+}

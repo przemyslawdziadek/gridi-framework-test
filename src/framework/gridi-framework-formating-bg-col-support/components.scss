@@ -1,0 +1,9 @@
+@each $palette-color-prefix, $palette-color-variables in get-background-colors-palette($formating-background-colors-support-extra-colors-palette, $formating-background-colors-support-skip-colors-palette) {
+    .#{$background-colors-helpers-class-prefix}#{$palette-color-prefix} {
+        @include blockquote-colors(map-get($palette-color-variables, background-inner-color));
+        @include pre-colors(map-get($palette-color-variables, background-inner-color), map-get($palette-color-variables, background-inner-color), map-get($palette-color-variables, color));
+        @include code-colors(map-get($palette-color-variables, background-inner-color), map-get($palette-color-variables, color));
+        @include kbd-colors(map-get($palette-color-variables, background-inner-color), map-get($palette-color-variables, color));
+        @include mark-colors(map-get($palette-color-variables, background-inner-color), map-get($palette-color-variables, color));
+    }
+}

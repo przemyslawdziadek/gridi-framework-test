@@ -1,0 +1,7 @@
+@each $palette-color-prefix, $palette-color-variables in get-background-colors-palette($forms-core-background-colors-support-extra-colors-palette, $forms-core-background-colors-support-skip-colors-palette) {
+    .#{$background-colors-helpers-class-prefix}#{$palette-color-prefix} {
+        legend {
+            color: map-get($palette-color-variables, background-inner-color);
+        }
+    }
+}

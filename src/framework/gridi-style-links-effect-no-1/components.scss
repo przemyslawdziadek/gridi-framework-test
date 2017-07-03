@@ -1,0 +1,5 @@
+@if $links-efect-no-1-make-class {
+    @include class-links-style($links-efect-no-1-class) {
+        @include make-links-efect-no-1($links-efect-no-1-color, $links-efect-no-1-hover-color, $links-efect-no-1-botom-line-bottom, $links-efect-no-1-botom-line-height, $links-efect-no-1-botom-line-translate-y, $links-efect-no-1-botom-line-transition-duration);
+    }
+}

@@ -1,0 +1,32 @@
+{
+    "name": "gridi-style-hollow-buttons-colors-helpers",
+    "description": "",
+    "main": "",
+    "authors": [
+        "Przemysław Dziadek <przemyslaw.dziadek@gmail.com>"
+    ],
+    "license": "MIT",
+    "keywords": [
+        "css",
+        "scss",
+        "gridi",
+        "framework",
+        "colors",
+        "helpers",
+        "buttons",
+        "hollow"
+    ],
+    "homepage": "https://github.com/gridi-style/gridi-style-hollow-buttons-colors-helpers",
+    "ignore": [
+        "**/.*",
+        "**/*.md",
+        "**/*.js",
+        "**/*.json",
+        "node_modules",
+        "bower_components"
+    ],
+    "dependencies": {
+        "gridi-framework-core": "*",
+        "gridi-style-hollow-buttons": "*"
+    }
+}

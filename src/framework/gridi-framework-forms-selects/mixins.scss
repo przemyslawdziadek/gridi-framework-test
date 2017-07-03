@@ -1,0 +1,103 @@
+//Select
+@mixin include-select-colors($border-color: null , $focus-border-color: null, $background: null, $color: null) {
+    @if $border-color {
+        border-color: $border-color;
+    }
+
+    @if $background {
+        background: $background;
+    }
+
+    @if $color {
+        color: $color;
+    }
+
+    @if $focus-border-color {
+        &:focus {
+            border-color: $focus-border-color;
+        }
+    }
+}
+
+@mixin select-colors($border-color: null , $focus-border-color: null, $background: null, $color: null) {
+    select {
+        @include include-select-colors($border-color, $focus-border-color, $background, $color);
+    }
+}
+
+@mixin class-select-colors($class, $border-color: null , $focus-border-color: null, $background: null, $color: null) {
+    select.#{$class} {
+        @include include-select-colors($border-color, $focus-border-color, $background, $color);
+    }
+}
+
+//Disabled
+@mixin select-disabled-colors($border-color: null , $focus-border-color: null, $background: null, $color: null) {
+    select[disabled] {
+        @include include-select-colors($border-color, $focus-border-color, $background, $color);
+    }
+}
+
+@mixin class-select-disabled-colors($class, $border-color: null , $focus-border-color: null, $background: null, $color: null) {
+    select.#{$class}[disabled] {
+        @include include-select-colors($border-color, $focus-border-color, $background, $color);
+    }
+}
+
+
+//Arrow
+@mixin include-select-arrow-color-rgb($rgb) {
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' version='1.1' width='32' height='24' viewBox='0 0 32 24'><polygon points='0,0 32,0 16,24' style='fill: rgb%28#{$rgb}%29'></polygon></svg>");
+}
+@mixin select-arrow-color-rgb($rgb) {
+    select {
+        @include include-select-arrow-color-rgb($rgb);
+    }
+}
+
+@mixin class-select-arrow-color-rgb($class, $rgb) {
+    select.#{$class} {
+        @include include-select-arrow-color-rgb($rgb);
+    }
+}
+
+//Multiple
+@mixin include-select-multiple-option-checked-background($background) {
+    background: $background -webkit-linear-gradient(0deg, $background 0%, $background 100%);
+    background: $background -mz-linear-gradient(0deg, $background 0%, $background 100%);
+    background: $background -ms-linear-gradient(0deg, $background 0%, $background 100%);
+    background: $background -o-linear-gradient(0deg, $background 0%, $background 100%);
+    background: $background linear-gradient(0deg, $background 0%, $background 100%);
+}
+
+@mixin select-multiple-option-checked-background($background) {
+    select[multiple] option:checked {
+        @include include-select-multiple-option-checked-background($background);
+    }
+}
+
+@mixin class-select-multiple-option-checked-background($class, $background) {
+    select.#{$class}[multiple] option:checked {
+        @include include-select-multiple-option-checked-background($background);
+    }
+}
+
+@mixin include-select-focus-multiple-option-checked-background($background) {
+    background: $background -webkit-linear-gradient(0deg, $background 0%, $background 100%);
+    background: $background -mz-linear-gradient(0deg, $background 0%, $background 100%);
+    background: $background -ms-linear-gradient(0deg, $background 0%, $background 100%);
+    background: $background -o-linear-gradient(0deg, $background 0%, $background 100%);
+    background: $background linear-gradient(0deg, $background 0%, $background 100%);
+}
+
+@mixin select-focus-multiple-option-checked-background($background) {
+    select[multiple]:focus option:checked {
+        @include include-select-focus-multiple-option-checked-background($background);
+    }
+}
+
+@mixin class-select-focus-multiple-option-checked-background($class, $background) {
+    select.#{$class}[multiple]:focus option:checked {
+        @include include-select-focus-multiple-option-checked-background($background);
+    }
+}

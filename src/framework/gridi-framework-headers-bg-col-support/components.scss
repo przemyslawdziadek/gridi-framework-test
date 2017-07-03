@@ -1,0 +1,5 @@
+@each $palette-color-prefix, $palette-color-variables in get-background-colors-palette($headers-background-colors-support-extra-colors-palette, $headers-background-colors-support-skip-colors-palette) {
+    .#{$background-colors-helpers-class-prefix}#{$palette-color-prefix} {
+        @include h1-h6-color(map-get($palette-color-variables, background-inner-color));
+    }
+}

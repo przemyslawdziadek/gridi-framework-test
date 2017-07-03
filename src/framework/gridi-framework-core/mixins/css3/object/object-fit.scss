@@ -1,0 +1,9 @@
+@mixin object-fit($value: fill) {
+    @include css3-property(object-fit, $value);
+}
+
+@mixin supports-object-fit() {
+    @supports ( (object-fit: cover) or (-webkit-object-fit: cover) or (-moz-object-fit: cover) or (-ms-object-fit: cover) or (-o-object-fit: cover) ) {
+        @content;
+    }
+}

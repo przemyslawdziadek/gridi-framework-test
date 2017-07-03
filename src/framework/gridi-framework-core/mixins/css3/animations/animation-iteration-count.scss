@@ -1,0 +1,3 @@
+@mixin animation-iteration-count($value) {
+    @include css3-property(animation-iteration-count, $value);
+}

@@ -1,0 +1,11 @@
+$document-background-color: get-color(white) !default;
+$document-font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !default;
+$document-font-size: 13px !default;
+$document-font-weight: normal !default;
+$document-line-height: 1.6em !default;
+$document-color: get-color(black) !default;
+//Defined font size for each screens.
+/*$document-font-size-for-screens: (
+    s1: 16px,
+    ...
+) !default;*/

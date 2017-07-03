@@ -1,0 +1,37 @@
+{
+  "name": "gridi-framework-headers",
+  "description": "",
+  "main": "",
+  "authors": [
+    "Przemysław Dziadek <przemyslaw.dziadek@gmail.com>"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "css",
+    "scss",
+    "gridi",
+    "framework",
+    "headers"
+  ],
+  "homepage": "https://github.com/gridi-framework/gridi-framework-headers",
+  "ignore": [
+    "**/.*",
+    "**/*.md",
+    "**/*.js",
+    "**/*.json",
+    "node_modules",
+    "bower_components"
+  ],
+  "dependencies": {
+    "gridi-framework-core": "*"
+  },
+  "_release": "8a29e4db9d",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "8a29e4db9dbdfaeef85df52ca9eac2f3e091c474"
+  },
+  "_source": "https://github.com/gridi-framework/gridi-framework-headers.git",
+  "_target": "*",
+  "_originalSource": "gridi-framework-headers"
+}

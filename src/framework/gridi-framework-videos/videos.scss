@@ -1,0 +1,23 @@
+video {
+    display: inline-block;
+    vertical-align: baseline;
+}
+
+.video-no-media-controls video,
+video.no-media-controls {
+    &::-webkit-media-controls-panel {
+        display: none!important;
+        -webkit-appearance: none!important;
+    }
+    /* Old shadow dom for play button */
+    &::--webkit-media-controls-play-button {
+        display: none!important;
+        -webkit-appearance: none!important;
+    }
+    /* New shadow dom for play button */
+    /* This one works */
+    &::-webkit-media-controls-start-playback-button {
+        display: none!important;
+        -webkit-appearance: none!important;
+    }
+}

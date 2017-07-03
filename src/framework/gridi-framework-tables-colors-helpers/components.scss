@@ -1,0 +1,3 @@
+@each $palette-color-prefix, $palette-color-variables in get-colors-palette($tables-colors-helpers-extra-colors-palette, $tables-colors-helpers-skip-colors-palette) {
+    @include class-table-colors($palette-color-prefix, transparent, map-get($palette-color-variables, background-inner-color), map-get($palette-color-variables, color));
+}

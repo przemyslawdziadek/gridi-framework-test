@@ -1,0 +1,38 @@
+{
+  "name": "gridi-framework-typography-helpers",
+  "description": "",
+  "main": "",
+  "authors": [
+    "Przemysław Dziadek <przemyslaw.dziadek@gmail.com>"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "css",
+    "scss",
+    "gridi",
+    "framework",
+    "typography",
+    "helpers"
+  ],
+  "homepage": "https://github.com/gridi-framework/gridi-framework-typography-helpers",
+  "ignore": [
+    "**/.*",
+    "**/*.md",
+    "**/*.js",
+    "**/*.json",
+    "node_modules",
+    "bower_components"
+  ],
+  "dependencies": {
+    "gridi-framework-core": "*"
+  },
+  "_release": "67a93734d6",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "67a93734d632453e7028047de7399601ff88aa75"
+  },
+  "_source": "https://github.com/gridi-framework/gridi-framework-typography-helpers.git",
+  "_target": "*",
+  "_originalSource": "gridi-framework-typography-helpers"
+}

@@ -1,0 +1,38 @@
+{
+  "name": "gridi-framework-display-helpers",
+  "description": "",
+  "main": "",
+  "authors": [
+    "Przemysław Dziadek <przemyslaw.dziadek@gmail.com>"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "css",
+    "scss",
+    "gridi",
+    "framework",
+    "display",
+    "helpers"
+  ],
+  "homepage": "https://github.com/gridi-framework/gridi-framework-display-helpers",
+  "ignore": [
+    "**/.*",
+    "**/*.md",
+    "**/*.js",
+    "**/*.json",
+    "node_modules",
+    "bower_components"
+  ],
+  "dependencies": {
+    "gridi-framework-core": "*"
+  },
+  "_release": "23e023639f",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "23e023639f2c97f4f05a7d87e4b03a451b205590"
+  },
+  "_source": "https://github.com/gridi-framework/gridi-framework-display-helpers.git",
+  "_target": "*",
+  "_originalSource": "gridi-framework-display-helpers"
+}

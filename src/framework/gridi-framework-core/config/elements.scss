@@ -1,0 +1,10 @@
+//Elements
+$elements-margin-vertical: 20px !default;
+$elements-margin-horizontal: 0 !default;
+$elements-margin: $elements-margin-vertical $elements-margin-horizontal !default;
+$elements-transition-duration: 0.2s !default;
+$elements-transition-function: linear !default;
+$elements-transition: all $elements-transition-duration $elements-transition-function !default;
+
+//Inline backgrounds
+$inline-background-elements-padding: 2px 4px !default;

@@ -1,0 +1,119 @@
+input[type="range"] {
+    display: block;
+    width: 100%;
+    margin: 0;
+    border: 0;
+    outline: 0;
+    padding: 0;
+    @include appearance(none);
+
+    &::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        appearance: none;
+    }
+
+    &:focus {
+        border: 0;
+        outline: 0;
+    }
+
+    &::-ms-track {
+        cursor: pointer;
+        width: 100%;
+        border-color: transparent;
+        background: transparent;
+        color: transparent;
+    }
+
+    //Range thumb
+
+    &::-webkit-slider-thumb {
+        cursor: pointer;
+        height: $range-thumb-size;
+        width: $range-thumb-size;
+        margin-top: -(($range-thumb-size - $range-track-height) / 2);
+        border: $range-thumb-border;
+        background: $range-thumb-background;
+        -webkit-border-radius: 50%;
+        border-radius: 50%;
+        -webkit-appearance: none;
+        appearance: none;
+
+    }
+
+    &::-moz-range-thumb {
+        cursor: pointer;
+        height: $range-thumb-size;
+        width: $range-thumb-size;
+        border: $range-thumb-border;
+        background: $range-thumb-background;
+        -moz-border-radius: 50%;
+        border-radius: 50%;
+        -moz-appearance: none;
+        appearance: none;
+    }
+
+    &::-ms-thumb {
+        cursor: pointer;
+        height: $range-thumb-size;
+        width: $range-thumb-size;
+        border: $range-thumb-border;
+        background: $range-thumb-background;
+        -ms-border-radius: 50%;
+        border-radius: 50%;
+        -ms-appearance: none;
+        appearance: none;
+    }
+
+    //Range track
+    &::-webkit-slider-runnable-track {
+        cursor: pointer;
+        width: 100%;
+        height: $range-track-height;
+        background: $range-track-background;
+        border: 0;
+    }
+
+    &:focus::-webkit-slider-runnable-track {
+        background: $range-focus-track-background;
+    }
+
+    &::-moz-range-track {
+        cursor: pointer;
+        width: 100%;
+        height: $range-track-height;
+        background: $range-track-background;
+        border: 0;
+    }
+
+    &:focus::-moz-range-track {
+        background: $range-focus-track-background;
+    }
+
+    &::-ms-track {
+        cursor: pointer;
+        width: 100%;
+        height: $range-track-height;
+        background: transparent;
+        border: 0;
+        color: transparent;
+    }
+
+    &::-ms-fill-lower {
+        background: $range-track-background;
+        border: 0;
+    }
+
+    &:focus::-ms-fill-lower {
+        background: $range-focus-track-background;
+    }
+
+    &::-ms-fill-upper {
+        background: $range-track-background;
+        border: 0;
+    }
+
+    &:focus::-ms-fill-upper {
+        background: $range-focus-track-background;
+    }
+}

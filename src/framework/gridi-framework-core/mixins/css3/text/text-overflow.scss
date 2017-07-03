@@ -1,0 +1,4 @@
+@mixin text-overflow($value: clip) {
+    @include css3-o-property(text-overflow, $value);
+    text-overflow: #{$value};
+}

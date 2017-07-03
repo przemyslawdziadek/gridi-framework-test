@@ -1,0 +1,42 @@
+{
+  "name": "gridi-style-links-effect-no-1-colors-helpers",
+  "description": "",
+  "main": "",
+  "authors": [
+    "Przemysław Dziadek <przemyslaw.dziadek@gmail.com>"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "css",
+    "scss",
+    "gridi",
+    "framework",
+    "colors",
+    "helpers",
+    "links",
+    "efect",
+    "no-1"
+  ],
+  "homepage": "https://github.com/gridi-style/gridi-style-links-effect-no-1-colors-helpers",
+  "ignore": [
+    "**/.*",
+    "**/*.md",
+    "**/*.js",
+    "**/*.json",
+    "node_modules",
+    "bower_components"
+  ],
+  "dependencies": {
+    "gridi-framework-core": "*",
+    "gridi-style-links-effect-no-1": "*"
+  },
+  "_release": "190240a6ef",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "190240a6efa2e9321ee57ecb36459b35b0956b56"
+  },
+  "_source": "https://github.com/gridi-style/gridi-style-links-effect-no-1-colors-helpers.git",
+  "_target": "*",
+  "_originalSource": "gridi-style-links-effect-no-1-colors-helpers"
+}

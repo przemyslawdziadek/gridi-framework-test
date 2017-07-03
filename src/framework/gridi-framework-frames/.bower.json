@@ -1,0 +1,34 @@
+{
+  "name": "gridi-framework-frames",
+  "description": "",
+  "main": "",
+  "authors": [
+    "Przemysław Dziadek <przemyslaw.dziadek@gmail.com>"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "css",
+    "scss",
+    "gridi",
+    "framework",
+    "frames"
+  ],
+  "homepage": "https://github.com/gridi-framework/gridi-framework-frames",
+  "ignore": [
+    "**/.*",
+    "**/*.md",
+    "**/*.js",
+    "**/*.json",
+    "node_modules",
+    "bower_components"
+  ],
+  "_release": "a187371b61",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "a187371b612b5fe3fc653feb463b7a304635f54f"
+  },
+  "_source": "https://github.com/gridi-framework/gridi-framework-frames.git",
+  "_target": "*",
+  "_originalSource": "gridi-framework-frames"
+}

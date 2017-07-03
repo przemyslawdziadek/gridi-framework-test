@@ -1,0 +1,43 @@
+{
+  "name": "gridi-framework-forms-selects-bg-col-support",
+  "description": "",
+  "main": "",
+  "authors": [
+    "Przemysław Dziadek <przemyslaw.dziadek@gmail.com>"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "css",
+    "scss",
+    "gridi",
+    "framework",
+    "forms",
+    "selects",
+    "background",
+    "colors",
+    "support"
+  ],
+  "homepage": "https://github.com/gridi-framework/gridi-framework-forms-selects-bg-col-support",
+  "ignore": [
+    "**/.*",
+    "**/*.md",
+    "**/*.js",
+    "**/*.json",
+    "node_modules",
+    "bower_components"
+  ],
+  "dependencies": {
+    "gridi-framework-core": "*",
+    "gridi-framework-forms-selects": "*",
+    "gridi-framework-background-colors-helpers": "*"
+  },
+  "_release": "58cbe0667f",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "58cbe0667fe58671f907e899051d2ab230383145"
+  },
+  "_source": "https://github.com/gridi-framework/gridi-framework-forms-selects-bg-col-support.git",
+  "_target": "*",
+  "_originalSource": "gridi-framework-forms-selects-bg-col-support"
+}

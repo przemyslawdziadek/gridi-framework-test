@@ -1,0 +1,7 @@
+@mixin transform($value) {
+    @include css3-property(transform, $value);
+}
+
+@mixin transform-origin($value) {
+    @include css3-property(transform-origin, $value);
+}

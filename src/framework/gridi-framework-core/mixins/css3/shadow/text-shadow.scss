@@ -1,0 +1,3 @@
+@mixin text-shadow($value: none) {
+    @include css3-property(text-shadow, $value);
+}

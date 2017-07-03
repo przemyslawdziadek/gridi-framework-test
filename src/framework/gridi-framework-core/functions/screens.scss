@@ -1,0 +1,38 @@
+/**
+ * return screens map
+ *
+ * @function
+ */
+@function get-screens-map() {
+    @return $screens-sizes;
+}
+
+/**
+ * return screens prefixes list
+ *
+ * @function
+ */
+@function get-screens-prefixes() {
+    @return map-keys($screens-sizes);
+}
+
+/**
+ * Retrieves a screen value from the $screens sass map
+ *
+ * @function
+ * @param {string} size prefix         - lower-case size prefix
+ * @param {string} [size-variant=min]  - lowercase size variant
+ * @param {map} [size-map=$screens]  - sass size map
+ */
+@function get-screen-size($size-prefix, $size-variant: min, $sizes-map: $screens-sizes) {
+    $size-map: map-get($sizes-map, $size-prefix);
+    @if $size-map == null {
+        @error "=> ERROR: SIZE MAP NOT FOUND! <= | Size prefix: #{$size-prefix}, Size variant: #{$size-variant}";
+    }
+    $size: map-get($size-map, $size-variant);
+    @if $size {
+         @return $size;
+    } @else {
+        @error "=> ERROR: SIZE NOT FOUND! <= | Size prefix: #{$size-prefix}, Size variant: #{$size-variant}";
+    }
+}

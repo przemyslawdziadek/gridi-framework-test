@@ -1,0 +1,29 @@
+@mixin make-hollow-buttons($border, $color, $hover-color) {
+    border: $border;
+    @include include-hollow-buttons-colors($color, $hover-color);
+}
+
+@mixin include-hollow-buttons-colors($color, $hover-color) {
+    background: transparent;
+    border-color: $color;
+    color: $color;
+
+    &:hover, &:focus {
+        border-color: $hover-color;
+        color: $hover-color;
+    }
+}
+
+@mixin hollow-buttons-colors($color, $hover-color) {
+    @include class-buttons-style($hollow-button-class) {
+        @include include-hollow-buttons-colors($color, $hover-color);
+    }
+}
+
+@mixin class-hollow-buttons-colors($class, $color, $hover-color) {
+    @include class-buttons-style($hollow-button-class) {
+        &.#{$class} {
+            @include include-hollow-buttons-colors($color, $hover-color);
+        }
+    }
+}

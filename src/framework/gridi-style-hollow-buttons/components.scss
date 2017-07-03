@@ -1,0 +1,5 @@
+@if $hollow-button-make-class {
+    @include class-buttons-style($hollow-button-class) {
+        @include make-hollow-buttons($hollow-button-border, $hollow-button-color, $hollow-button-hover-color);
+    }
+}

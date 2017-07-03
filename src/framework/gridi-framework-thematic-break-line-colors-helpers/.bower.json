@@ -1,0 +1,40 @@
+{
+  "name": "gridi-framework-thematic-break-line-colors-helpers",
+  "description": "",
+  "main": "",
+  "authors": [
+    "Przemysław Dziadek <przemyslaw.dziadek@gmail.com>"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "css",
+    "scss",
+    "gridi",
+    "framework",
+    "colors",
+    "helpers",
+    "thematic-break-line"
+  ],
+  "homepage": "https://github.com/gridi-framework/gridi-framework-thematic-break-line-colors-helpers",
+  "ignore": [
+    "**/.*",
+    "**/*.md",
+    "**/*.js",
+    "**/*.json",
+    "node_modules",
+    "bower_components"
+  ],
+  "dependencies": {
+    "gridi-framework-core": "*",
+    "gridi-framework-thematic-break-line": "*"
+  },
+  "_release": "467108a2d6",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "467108a2d6168f83bfc5a15e9ec3fed8730ee956"
+  },
+  "_source": "https://github.com/gridi-framework/gridi-framework-thematic-break-line-colors-helpers.git",
+  "_target": "*",
+  "_originalSource": "gridi-framework-thematic-break-line-colors-helpers"
+}

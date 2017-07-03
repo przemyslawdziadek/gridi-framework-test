@@ -1,0 +1,77 @@
+//Text inputs
+@mixin text-inputs-style() {
+    input[type="text"],
+    input[type="search"],
+    input[type="email"],
+    input[type="url"],
+    input[type="number"],
+    input[type="password"],
+    input[type="date"],
+    input[type="time"],
+    input[type="datetime"],
+    input[type="datetime-local"],
+    input[type="month"],
+    input[type="week"],
+    input[type="color"],
+    textarea {
+        @content;
+    }
+}
+
+@mixin class-text-inputs-style($class) {
+    @include text-inputs-style() {
+        &.#{$class} {
+            @content;
+        }
+    }
+}
+
+//Disabled text inputs
+@mixin text-inputs-disabled-style() {
+    @include text-inputs-style() {
+        &[disabled] {
+            @content;
+        }
+    }
+}
+
+@mixin class-text-inputs-disabled-style($class) {
+    @include class-text-inputs-style($class) {
+        &[disabled] {
+            @content;
+        }
+    }
+}
+
+//Placeholder
+@mixin include-placeholder-color($color) {
+    &::-webkit-input-placeholder {
+        color: $color;
+    }
+    &::-moz-placeholder { /* Firefox 19+ */
+        color: $color;
+    }
+    &:-ms-input-placeholder { /* IE 10+ */
+        color: $color;
+    }
+    &:-moz-placeholder { /* Firefox 18- */
+        color: $color;
+    }
+    &::placeholder {
+        color: $color;
+    }
+}
+
+@mixin placeholder-color($color) {
+    input, textarea {
+        @include include-placeholder-color($color);
+    }
+}
+
+@mixin class-placeholder-color($class, $color) {
+    input, textarea {
+        &.#{$class} {
+            @include include-placeholder-color($color);
+        }
+    }
+}

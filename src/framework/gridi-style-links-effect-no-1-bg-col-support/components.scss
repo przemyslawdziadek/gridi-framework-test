@@ -1,0 +1,5 @@
+@each $palette-color-prefix, $palette-color-variables in get-background-colors-palette($links-efect-no-1-background-colors-support-extra-colors-palette, $links-efect-no-1-background-colors-support-skip-colors-palette) {
+    .#{$background-colors-helpers-class-prefix}#{$palette-color-prefix} {
+        @include links-efect-no-1-colors( map-get($palette-color-variables, background-inner-color), map-get($palette-color-variables, background-inner-color));
+    }
+}

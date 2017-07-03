@@ -1,0 +1,91 @@
+//Blocks elements
+//Blockquote
+@mixin include-blockquote-colors($border-color) {
+    border-color: $border-color;
+}
+
+@mixin blockquote-colors($border-color) {
+    blockquote {
+        @include include-blockquote-colors($border-color);
+    }
+}
+
+@mixin class-blockquote-colors($class, $border-color) {
+    blockquote.#{$class} {
+        @include include-blockquote-colors($border-color);
+    }
+}
+
+//Pre
+@mixin include-pre-colors($border-color, $background, $color) {
+    border-color: $border-color;
+    background: $background;
+    color: $color;
+}
+
+@mixin pre-colors($border-color, $background, $color) {
+    pre {
+        @include include-pre-colors($border-color, $background, $color);
+    }
+}
+
+@mixin class-pre-colors($class, $border-color, $background, $color) {
+    pre.#{$class} {
+        @include include-pre-colors($border-color, $background, $color);
+    }
+}
+
+//Inline elements
+//Code
+@mixin include-code-colors($background, $color) {
+    background: $background;
+    color: $color;
+}
+
+@mixin code-colors($background, $color) {
+    code {
+        @include include-code-colors($background, $color);
+    }
+}
+
+@mixin class-code-colors($class, $background, $color) {
+    code.#{$class} {
+        @include include-code-colors($background, $color);
+    }
+}
+
+//Kbd
+@mixin include-kbd-colors($background, $color) {
+    background: $background;
+    color: $color;
+}
+
+@mixin kbd-colors($background, $color) {
+    kbd {
+        @include include-kbd-colors($background, $color);
+    }
+}
+
+@mixin class-kbd-colors($class, $background, $color) {
+    kbd.#{$class} {
+        @include include-kbd-colors($background, $color);
+    }
+}
+
+//Mark
+@mixin include-mark-colors($background, $color) {
+    background: $background;
+    color: $color;
+}
+
+@mixin mark-colors($background, $color) {
+    mark {
+        @include include-mark-colors($background, $color);
+    }
+}
+
+@mixin class-mark-colors($class, $background, $color) {
+    mark.#{$class} {
+        @include include-mark-colors($background, $color);
+    }
+}

@@ -1,0 +1,40 @@
+meter, progress, .progress {
+    display: block;
+    width: 100%;
+    height: $progress-height;
+    margin: $progress-margin;
+    border: 0;
+    outline: 0;
+    background: $progress-background-color;
+    padding: 0;
+    @include border-radius(0);
+}
+
+progress, .progress {
+    @include appearance(none);
+}
+
+.progress .progress-meter {
+    display: block;
+    width: 0;
+    height: 100%;
+    background: $progress-meter-background-color;
+
+    .progress-meter-text {
+        display: block;
+        width: 100%;
+        height: 100%;
+        font-size: $progress-meter-text-font-size;
+        line-height: $progress-height;
+        text-align: center;
+        color: $progress-meter-text-color;
+    }
+}
+
+progress {
+    @include include-progress-colors($progress-background-color, $progress-meter-background-color);
+}
+
+meter {
+    @include include-meter-colors($progress-background-color, $progress-meter-background-color);
+}

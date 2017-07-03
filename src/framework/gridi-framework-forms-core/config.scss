@@ -1,0 +1,25 @@
+//Form element
+$form-elements-margin-vertical: 10px !default;
+$form-elements-margin-horizontal: 0 !default;
+$form-elements-margin: $form-elements-margin-vertical $form-elements-margin-horizontal !default;
+
+//Fieldset
+$fieldset-margin: $form-elements-margin !default;
+
+$fieldset-legend-margin: $form-elements-margin !default;
+$fieldset-legend-color: $primary-color !default;
+
+//Label
+$label-margin: $form-elements-margin !default;
+
+//Extra
+//Form Group
+$form-group-margin: $form-elements-margin !default;
+
+//Form element help
+$form-element-help-margin: 5px 0 !default;
+$form-element-help-padding: 0 0 0 5px !default;
+$form-element-help-before-content: "* " !default;
+
+//Form Element description
+$form-element-description-margin: 5px 0 !default;

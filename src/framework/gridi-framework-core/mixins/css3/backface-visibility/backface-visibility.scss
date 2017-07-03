@@ -1,0 +1,3 @@
+@mixin backface-visibility($value: visible) {
+    @include css3-property(backface-visibility, $value);
+}

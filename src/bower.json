@@ -1,0 +1,18 @@
+{
+    "name": "gridi-test-framework",
+    "description": "",
+    "main": "",
+    "authors": [
+        "Przemysław Dziadek <przemyslaw.dziadek@gmail.com>"
+    ],
+    "license": "MIT",
+    "dependencies": {
+        "gridi-framework": "*",
+        "gridi-style-hollow-buttons": "*",
+        "gridi-style-hollow-buttons-colors-helpers": "*",
+        "gridi-style-hollow-buttons-bg-col-support": "*",
+        "gridi-style-links-effect-no-1": "*",
+        "gridi-style-links-effect-no-1-colors-helpers": "*",
+        "gridi-style-links-effect-no-1-bg-col-support": "*"
+    }
+}

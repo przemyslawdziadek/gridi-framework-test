@@ -1,0 +1,41 @@
+{
+  "name": "gridi-framework-forms-selects-colors-helpers",
+  "description": "",
+  "main": "",
+  "authors": [
+    "Przemysław Dziadek <przemyslaw.dziadek@gmail.com>"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "css",
+    "scss",
+    "gridi",
+    "framework",
+    "colors",
+    "helpers",
+    "forms",
+    "selects"
+  ],
+  "homepage": "https://github.com/gridi-framework/gridi-framework-forms-selects-colors-helpers",
+  "ignore": [
+    "**/.*",
+    "**/*.md",
+    "**/*.js",
+    "**/*.json",
+    "node_modules",
+    "bower_components"
+  ],
+  "dependencies": {
+    "gridi-framework-core": "*",
+    "gridi-framework-forms-selects": "*"
+  },
+  "_release": "a1e69ed6d6",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "a1e69ed6d6e98d4d537fe073faeea6a0081c2bb9"
+  },
+  "_source": "https://github.com/gridi-framework/gridi-framework-forms-selects-colors-helpers.git",
+  "_target": "*",
+  "_originalSource": "gridi-framework-forms-selects-colors-helpers"
+}

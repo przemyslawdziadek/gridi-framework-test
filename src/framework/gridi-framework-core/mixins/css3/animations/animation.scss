@@ -1,0 +1,3 @@
+@mixin animation($value) {
+    @include css3-property(animation, $value);
+}

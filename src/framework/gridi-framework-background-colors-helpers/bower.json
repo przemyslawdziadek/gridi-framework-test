@@ -1,0 +1,30 @@
+{
+    "name": "gridi-framework-background-colors-helpers",
+    "description": "",
+    "main": "",
+    "authors": [
+        "Przemysław Dziadek <przemyslaw.dziadek@gmail.com>"
+    ],
+    "license": "MIT",
+    "keywords": [
+        "css",
+        "scss",
+        "gridi",
+        "framework",
+        "background",
+        "colors",
+        "helpers"
+    ],
+    "homepage": "https://github.com/gridi-framework/gridi-framework-background-colors-helpers",
+    "ignore": [
+        "**/.*",
+        "**/*.md",
+        "**/*.js",
+        "**/*.json",
+        "node_modules",
+        "bower_components"
+    ],
+    "dependencies": {
+        "gridi-framework-core": "*"
+    }
+}

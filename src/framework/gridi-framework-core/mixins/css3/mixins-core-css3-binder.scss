@@ -1,0 +1,77 @@
+@import 'property';
+//Box sizing
+@import 'box-sizing/box-sizing';
+
+//Backface visibility
+@import 'backface-visibility/backface-visibility';
+
+//Appearance
+@import 'appearance/appearance';
+
+//Resize
+@import 'resize/resize';
+
+//Flex
+@import 'flexbox/flexbox';
+
+//Columns
+@import 'columns/columns';
+@import 'columns/column-width';
+@import 'columns/column-count';
+@import 'columns/column-gap';
+@import 'columns/column-rule';
+@import 'columns/column-rule-color';
+@import 'columns/column-rule-style';
+@import 'columns/column-rule-width';
+@import 'columns/column-span';
+
+//Object
+@import 'object/object-fit';
+@import 'object/object-position';
+
+//Opacity
+@import 'opacity/opacity';
+
+//Border
+@import 'border/border-radius';
+@import 'border/border-image';
+
+//Background
+@import 'background/background-size';
+@import 'background/gradient';
+
+//Shadow
+@import 'shadow/box-shadow';
+@import 'shadow/text-shadow';
+
+//Text
+@import 'text/text-align-last';
+@import 'text/text-overflow';
+@import 'text/text-size-adjust';
+
+//Transforms
+@import 'transforms/transform';
+@import 'transforms/transform-2d';
+@import 'transforms/transform-3d';
+
+//Filters
+@import 'filters/filter';
+
+//Transitions
+@import 'transitions/transition';
+@import 'transitions/transition-delay';
+@import 'transitions/transition-duration';
+@import 'transitions/transition-property';
+@import 'transitions/transition-timing-function';
+
+//Animations
+@import 'animations/animation';
+@import 'animations/animation-delay';
+@import 'animations/animation-direction';
+@import 'animations/animation-duration';
+@import 'animations/animation-fill-mode';
+@import 'animations/animation-iteration-count';
+@import 'animations/animation-name';
+@import 'animations/animation-play-state';
+@import 'animations/animation-timing-function';
+@import 'animations/keyframes';

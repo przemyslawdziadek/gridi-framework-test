@@ -1,0 +1,39 @@
+{
+  "name": "gridi-framework-buttons",
+  "description": "",
+  "main": "",
+  "authors": [
+    "Przemysław Dziadek <przemyslaw.dziadek@gmail.com>"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "css",
+    "scss",
+    "gridi",
+    "framework",
+    "button",
+    "buttons"
+  ],
+  "homepage": "https://github.com/gridi-framework/gridi-framework-buttons",
+  "ignore": [
+    "**/.*",
+    "**/*.md",
+    "**/*.js",
+    "**/*.json",
+    "node_modules",
+    "bower_components"
+  ],
+  "dependencies": {
+    "gridi-framework-core": "*",
+    "gridi-framework-buttons-core": "*"
+  },
+  "_release": "cecdde4c74",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "cecdde4c7475724317d93bfe9369b9e98faa0fe2"
+  },
+  "_source": "https://github.com/gridi-framework/gridi-framework-buttons.git",
+  "_target": "*",
+  "_originalSource": "gridi-framework-buttons"
+}

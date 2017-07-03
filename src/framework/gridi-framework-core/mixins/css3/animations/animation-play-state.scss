@@ -1,0 +1,3 @@
+@mixin animation-play-state($value) {
+    @include css3-property(animation-play-state, $value);
+}

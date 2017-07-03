@@ -1,0 +1,57 @@
+/**
+ * Retrieves a color value from the $map-colors sass map
+ *
+ * @function
+ * @param {string} color-name             - lower-case color name (e.g. 'red', 'blue')
+ * @param {string} [color-variant='500']  - lowercase color variant (e.g. '100', 'a100')
+ * @param {map} [colors-map=$map-colors]  - sass colors map
+ */
+@function get-color($color-name, $color-variant: 500, $colors-map: $map-colors) {
+    $color-map: map-get($colors-map, $color-name);
+    @if $color-map == null {
+        @error "=> ERROR: COLOR MAP NOT FOUND! <= | Color name: #{$color-name}, Color variant: #{$color-variant}";
+    }
+    $color: map-get($color-map, $color-variant);
+    @if $color {
+         @return $color;
+    } @else {
+        @error "=> ERROR: COLOR NOT FOUND! <= | Color name: #{$color-name}, Color variant: #{$color-variant}";
+    }
+}
+
+/**
+ * Generate colors palette
+ *
+ * @function
+ * @param {map} [local-extra-colors-palette=null]         - extension of the standard colors palette to new ones
+ * @param {string|list} [local-skip-palette-colors=null]  - extension of the skip standard colors when generate palete
+ */
+@function get-colors-palette($local-extra-colors-palette: null, $local-skip-palette-colors: null) {
+    $generate-palette: map-merge($extra-colors-palette, $colors-palette);
+
+    @if type-of($local-extra-colors-palette) == map {
+        $generate-palette: map-merge($generate-palette, $local-extra-colors-palette);
+    }
+
+    @if type-of($skip-palette-colors) == string {
+        $generate-palette: map-remove($generate-palette, $skip-palette-colors);
+    }
+
+    @if type-of($skip-palette-colors) == list {
+        @each $palete-color-prefix in $skip-palette-colors {
+            $generate-palette: map-remove($generate-palette, $palete-color-prefix);
+        }
+    }
+
+    @if type-of($local-skip-palette-colors) == string {
+        $generate-palette: map-remove($generate-palette, $local-skip-palette-colors);
+    }
+
+    @if type-of($local-skip-palette-colors) == list {
+        @each $palete-color-prefix in $local-skip-palette-colors {
+            $generate-palette: map-remove($generate-palette, $palete-color-prefix);
+        }
+    }
+
+    @return $generate-palette;
+}

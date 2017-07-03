@@ -1,0 +1,3 @@
+@mixin transition-duration($value) {
+    @include css3-property(transition-duration, $value);
+}

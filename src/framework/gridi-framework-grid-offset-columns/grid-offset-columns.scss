@@ -1,0 +1,14 @@
+@for $i from 1 through $grid-columns {
+    .column-offset-#{$i} {
+        margin-left: percentage($i/$grid-columns);
+    }
+}
+@each $screen-prefix, $sizes in get-screens-map() {
+    @media(min-width: get-screen-size($screen-prefix, min)) {
+        @for $i from 1 through $grid-columns {
+            .column-offset-#{$screen-prefix}-#{$i} {
+                margin-left: percentage($i/$grid-columns);
+            }
+        }
+    }
+}

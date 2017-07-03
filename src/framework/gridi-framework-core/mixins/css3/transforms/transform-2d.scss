@@ -1,0 +1,43 @@
+@mixin transform-2d-matrix($value) {
+	@include transform(matrix(#{$value}));
+}
+
+@mixin transform-2d-translate($value) {
+	@include transform(translate(#{$value}));
+}
+
+@mixin transform-2d-translateX($value) {
+	@include transform(translateX(#{$value}));
+}
+
+@mixin transform-2d-translateY($value) {
+	@include transform(translateY(#{$value}));
+}
+
+@mixin transform-2d-scale($value) {
+	@include transform(scale(#{$value}));
+}
+
+@mixin transform-2d-scaleX($value) {
+	@include transform(scaleX(#{$value}));
+}
+
+@mixin transform-2d-scaleY($value) {
+	@include transform(scaleY(#{$value}));
+}
+
+@mixin transform-2d-rotate($value) {
+	@include transform(rotate(#{$value}));
+}
+
+@mixin transform-2d-skew($value) {
+	@include transform(skew(#{$value}));
+}
+
+@mixin transform-2d-skewX($value) {
+	@include transform(skewX(#{$value}));
+}
+
+@mixin transform-2d-skewY($value) {
+	@include transform(skewY(#{$value}));
+}

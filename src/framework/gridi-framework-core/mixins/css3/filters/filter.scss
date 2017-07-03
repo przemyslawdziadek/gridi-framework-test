@@ -1,0 +1,51 @@
+@mixin filter($value) {
+    @include css3-property(filter, $value);
+}
+
+@mixin filter-none {
+    @include filter(none);
+}
+
+@mixin filter-blur($value) {
+    @include filter("blur(#{$value})");
+}
+
+@mixin filter-brightness($value) {
+    @include filter("brightness(#{$value})");
+}
+
+@mixin filter-contrast($value) {
+    @include filter("contrast(#{$value})");
+}
+
+@mixin filter-drop-shadow($value) {
+    @include filter("drop-shadow(#{$value})");
+}
+
+@mixin filter-grayscale($value) {
+    @include filter("grayscale(#{$value})");
+}
+
+@mixin filter-hue-rotate($value) {
+    @include filter("hue-rotate(#{$value})");
+}
+
+@mixin filter-invert($value) {
+    @include filter("invert(#{$value})");
+}
+
+@mixin filter-opacity($value) {
+    @include filter("opacity(#{$value})");
+}
+
+@mixin filter-saturate($value) {
+    @include filter("saturate(#{$value})");
+}
+
+@mixin filter-sepia($value) {
+    @include filter("sepia(#{$value})");
+}
+
+@mixin filter-url($value) {
+    @include filter("url(#{$value})");
+}

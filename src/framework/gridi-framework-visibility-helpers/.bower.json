@@ -1,0 +1,38 @@
+{
+  "name": "gridi-framework-visibility-helpers",
+  "description": "",
+  "main": "",
+  "authors": [
+    "Przemysław Dziadek <przemyslaw.dziadek@gmail.com>"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "css",
+    "scss",
+    "gridi",
+    "framework",
+    "visibility",
+    "helpers"
+  ],
+  "homepage": "https://github.com/gridi-framework/gridi-framework-visibility-helpers",
+  "ignore": [
+    "**/.*",
+    "**/*.md",
+    "**/*.js",
+    "**/*.json",
+    "node_modules",
+    "bower_components"
+  ],
+  "dependencies": {
+    "gridi-framework-core": "*"
+  },
+  "_release": "961b0dc4f5",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "961b0dc4f5da208260f87ab3471da38f39af258e"
+  },
+  "_source": "https://github.com/gridi-framework/gridi-framework-visibility-helpers.git",
+  "_target": "*",
+  "_originalSource": "gridi-framework-visibility-helpers"
+}

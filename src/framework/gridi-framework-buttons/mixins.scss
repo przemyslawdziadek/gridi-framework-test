@@ -1,0 +1,29 @@
+@mixin include-buttons-colors($background, $color, $hover-background: null, $hover-color: null) {
+    @if not $hover-background {
+        $hover-background: $background;
+    }
+
+    @if not $hover-color {
+        $hover-color: $color;
+    }
+
+    background: $background;
+    color: $color;
+
+    &:hover, &:focus {
+        background: $hover-background;
+        color: $hover-color;
+    }
+}
+
+@mixin buttons-colors($background, $color, $hover-background: null, $hover-color: null) {
+    @include buttons-style() {
+        @include include-buttons-colors($background, $color, $hover-background, $hover-color);
+    }
+}
+
+@mixin class-buttons-colors($class, $background, $color, $hover-background: null, $hover-color: null) {
+    @include class-buttons-style($class) {
+        @include include-buttons-colors($background, $color, $hover-background, $hover-color);
+    }
+}

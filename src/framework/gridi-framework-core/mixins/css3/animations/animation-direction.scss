@@ -1,0 +1,3 @@
+@mixin animation-direction($value) {
+    @include css3-property(animation-direction, $value);
+}

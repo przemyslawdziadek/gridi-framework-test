@@ -1,0 +1,3 @@
+@mixin animation-delay($value) {
+    @include css3-property(animation-delay, $value);
+}

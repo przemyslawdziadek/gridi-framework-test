@@ -1,0 +1,64 @@
+//Select
+select {
+    display: block;
+    width: 100%;
+    height: $select-height;
+    border: $select-border;
+    padding: $select-padding;
+    font: inherit;
+    text-transform: none;
+    color: inherit;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' version='1.1' width='32' height='24' viewBox='0 0 32 24'><polygon points='0,0 32,0 16,24' style='fill: rgb%28#{$select-arrow-color-rgb}%29'></polygon></svg>");
+    background-position: right 10px center;
+    background-repeat: no-repeat;
+    @include background-size(auto 20%);
+    @include appearance(none);
+    &::-ms-expand { display: none };
+
+    &:focus {
+        border-color: $select-focus-border-color;
+    }
+
+    &[disabled] {
+        background: $select-disabled-background;
+    }
+
+    optgroup {
+        font: inherit;
+        font-weight: 600;
+        color: inherit;
+    }
+
+    &[multiple] {
+        height: auto;
+        min-height: $select-height;
+        background: transparent;
+        padding: $select-multiple-padding;
+
+        option, optgroup {
+            margin: 0;
+            padding: 0;
+            text-align: left;
+
+            &:before {
+                display: none;
+            }
+        }
+
+        option {
+            padding: $select-multiple-option-padding;
+
+            &:checked {
+                color: $select-multiple-option-checked-color;
+            }
+        }
+    }
+}
+
+select[multiple] option:checked {
+    @include include-select-multiple-option-checked-background($select-multiple-option-checked-background);
+}
+
+select[multiple]:focus option:checked {
+    @include include-select-focus-multiple-option-checked-background($select-multiple-focus-option-checked-background);
+}

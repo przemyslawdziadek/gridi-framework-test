@@ -1,0 +1,42 @@
+{
+  "name": "gridi-framework-links-bg-col-support",
+  "description": "",
+  "main": "",
+  "authors": [
+    "Przemysław Dziadek <przemyslaw.dziadek@gmail.com>"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "css",
+    "scss",
+    "gridi",
+    "framework",
+    "links",
+    "background",
+    "colors",
+    "support"
+  ],
+  "homepage": "https://github.com/gridi-framework/gridi-framework-links-bg-col-support",
+  "ignore": [
+    "**/.*",
+    "**/*.md",
+    "**/*.js",
+    "**/*.json",
+    "node_modules",
+    "bower_components"
+  ],
+  "dependencies": {
+    "gridi-framework-core": "*",
+    "gridi-framework-links": "*",
+    "gridi-framework-background-colors-helpers": "*"
+  },
+  "_release": "b4854ec15d",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "b4854ec15da965ab402a7db8ece8899ebd518a5b"
+  },
+  "_source": "https://github.com/gridi-framework/gridi-framework-links-bg-col-support.git",
+  "_target": "*",
+  "_originalSource": "gridi-framework-links-bg-col-support"
+}

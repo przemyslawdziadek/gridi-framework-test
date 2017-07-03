@@ -1,0 +1,35 @@
+{
+  "name": "gridi-framework-audios",
+  "description": "",
+  "main": "",
+  "authors": [
+    "Przemysław Dziadek <przemyslaw.dziadek@gmail.com>"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "css",
+    "scss",
+    "gridi",
+    "framework",
+    "audio",
+    "audios"
+  ],
+  "homepage": "https://github.com/gridi-framework/gridi-framework-audios",
+  "ignore": [
+    "**/.*",
+    "**/*.md",
+    "**/*.js",
+    "**/*.json",
+    "node_modules",
+    "bower_components"
+  ],
+  "_release": "b271e6837c",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "b271e6837c8d2a312d0fdc7cf939feead0f3222a"
+  },
+  "_source": "https://github.com/gridi-framework/gridi-framework-audios.git",
+  "_target": "*",
+  "_originalSource": "gridi-framework-audios"
+}

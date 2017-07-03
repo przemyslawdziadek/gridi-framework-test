@@ -1,0 +1,40 @@
+{
+  "name": "gridi-framework-tables-colors-helpers",
+  "description": "",
+  "main": "",
+  "authors": [
+    "Przemysław Dziadek <przemyslaw.dziadek@gmail.com>"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "css",
+    "scss",
+    "gridi",
+    "framework",
+    "colors",
+    "helpers",
+    "tables"
+  ],
+  "homepage": "https://github.com/gridi-framework/gridi-framework-tables-colors-helpers",
+  "ignore": [
+    "**/.*",
+    "**/*.md",
+    "**/*.js",
+    "**/*.json",
+    "node_modules",
+    "bower_components"
+  ],
+  "dependencies": {
+    "gridi-framework-core": "*",
+    "gridi-framework-tables": "*"
+  },
+  "_release": "62b54c122b",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "62b54c122bf928f062d782df55c62e5f6dbb1b4b"
+  },
+  "_source": "https://github.com/gridi-framework/gridi-framework-tables-colors-helpers.git",
+  "_target": "*",
+  "_originalSource": "gridi-framework-tables-colors-helpers"
+}

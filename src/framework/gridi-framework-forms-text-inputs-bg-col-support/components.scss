@@ -1,0 +1,6 @@
+@each $palette-color-prefix, $palette-color-variables in get-background-colors-palette($text-inputs-background-colors-support-extra-colors-palette, $text-inputs-background-colors-support-skip-colors-palette) {
+    .#{$background-colors-helpers-class-prefix}#{$palette-color-prefix} {
+        @include text-inputs-colors(map-get($palette-color-variables, background-inner-color), map-get($palette-color-variables, background-inner-color), map-get($palette-color-variables, background-inner-color), map-get($palette-color-variables, color));
+        @include datalist-colors(map-get($palette-color-variables, color));
+    }
+}

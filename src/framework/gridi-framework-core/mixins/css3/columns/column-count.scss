@@ -1,0 +1,3 @@
+@mixin column-count($value: auto) {
+    @include css3-property(column-count, $value);
+}

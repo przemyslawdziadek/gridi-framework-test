@@ -1,0 +1,3 @@
+@mixin transition-delay($value) {
+    @include css3-property(transition-delay, $value);
+}

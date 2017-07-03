@@ -1,0 +1,74 @@
+@if $float-helpers-generate-clearfix {
+    .clearfix {
+        &:before,
+        &:after {
+            content: " ";
+            display: table;
+            width: 100%;
+        }
+
+        &:after {
+            clear: both;
+        }
+    }
+}
+
+@if $float-helpers-generate-helper-classes {
+    .float-left {
+        float: left;
+    }
+
+    .float-right {
+        float: right;
+    }
+}
+
+@if $float-helpers-generate-screens-helper-classes {
+    $before-screen-prefix: null;
+
+    @each $screen-prefix, $sizes in map-reverse(get-screens-map()) {
+        @media(min-width: get-screen-size($screen-prefix, min)) {
+            .float-from-#{$screen-prefix}-left {
+                float: left;
+            }
+
+            .float-from-#{$screen-prefix}-right {
+                float: left;
+            }
+
+            @if not $before-screen-prefix {
+                .float-#{$screen-prefix}-left {
+                    float: left;
+                }
+
+                .float-#{$screen-prefix}-right {
+                    float: left;
+                }
+            }
+        }
+
+        @media(max-width: get-screen-size($screen-prefix, max)) {
+            .float-to-#{$screen-prefix}-left {
+                float: left;
+            }
+
+            .float-to-#{$screen-prefix}-right {
+                float: left;
+            }
+        }
+
+        @if $before-screen-prefix {
+            @media(min-width: get-screen-size($screen-prefix, min)) and (max-width: get-screen-size($before-screen-prefix, max)) {
+                .float-#{$screen-prefix}-left {
+                    float: left;
+                }
+
+                .float-#{$screen-prefix}-right {
+                    float: left;
+                }
+            }
+        }
+
+        $before-screen-prefix: $screen-prefix;
+    }
+}

@@ -1,0 +1,38 @@
+{
+  "name": "gridi-framework-progress-bars",
+  "description": "",
+  "main": "",
+  "authors": [
+    "Przemysław Dziadek <przemyslaw.dziadek@gmail.com>"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "css",
+    "scss",
+    "gridi",
+    "framework",
+    "progress",
+    "progress-bars"
+  ],
+  "homepage": "https://github.com/gridi-framework/gridi-framework-progress-bars",
+  "ignore": [
+    "**/.*",
+    "**/*.md",
+    "**/*.js",
+    "**/*.json",
+    "node_modules",
+    "bower_components"
+  ],
+  "dependencies": {
+    "gridi-framework-core": "*"
+  },
+  "_release": "2887846708",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "288784670802b58bc861ae28c416ebef4999b711"
+  },
+  "_source": "https://github.com/gridi-framework/gridi-framework-progress-bars.git",
+  "_target": "*",
+  "_originalSource": "gridi-framework-progress-bars"
+}

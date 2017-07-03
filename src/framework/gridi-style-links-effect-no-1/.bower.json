@@ -1,0 +1,40 @@
+{
+  "name": "gridi-style-links-effect-no-1",
+  "description": "",
+  "main": "",
+  "authors": [
+    "Przemysław Dziadek <przemyslaw.dziadek@gmail.com>"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "css",
+    "scss",
+    "gridi",
+    "framework",
+    "links",
+    "efect",
+    "no 1"
+  ],
+  "homepage": "https://github.com/gridi-style/gridi-style-links-effect-no-1",
+  "ignore": [
+    "**/.*",
+    "**/*.md",
+    "**/*.js",
+    "**/*.json",
+    "node_modules",
+    "bower_components"
+  ],
+  "dependencies": {
+    "gridi-framework-core": "*",
+    "gridi-framework-links": "*"
+  },
+  "_release": "36888de0bb",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "36888de0bbb587af616f0cb01a9bd580846e134b"
+  },
+  "_source": "https://github.com/gridi-style/gridi-style-links-effect-no-1.git",
+  "_target": "*",
+  "_originalSource": "gridi-style-links-effect-no-1"
+}

@@ -1,0 +1,123 @@
+//Blocks elements
+
+address {
+    margin: $address-margin;
+    border: 0;
+    padding: 0;
+    font-style: $address-font-style;
+}
+
+blockquote {
+    margin: $blockquote-margin;
+    border: 0;
+    border-left: $blockquote-border-left;
+    padding: $blockquote-padding;
+}
+
+cite {
+    display: block;
+    margin: 0;
+    padding: 0;
+    font-size: $cite-font-size;
+    font-style: $cite-font-style;
+
+    &:before {
+        content: $cite-prefix;
+    }
+}
+
+pre {
+    display: block;
+    overflow: auto;
+    margin: $pre-margin;
+    border: $pre-border;
+    background: $pre-background;
+    padding: $pre-padding;
+    font-family: $pre-font-family;
+
+    code {
+        padding: 0;
+        background: transparent;
+        white-space: pre-wrap;
+    }
+}
+
+//Inline elements
+abbr {
+    text-decoration: none;
+}
+
+abbr[title] {
+    cursor: help;
+    display: inline-block;
+    text-decoration: underline dotted;
+}
+
+b,
+strong {
+    font-weight: $bold-text-font-weight;
+}
+
+dfn, em, i, var {
+    font-style: italic;
+}
+
+ins, u {
+    display: inline-block;
+    position: relative;
+    text-decoration: underline;
+}
+
+s, del {
+    text-decoration: line-through;
+}
+
+code {
+    display: inline-block;
+    background: $code-background;
+    padding: $code-padding;
+    font-family: $code-font-family;
+}
+
+kbd {
+    display: inline-block;
+    background: $kbd-background;
+    padding: $kbd-padding;
+    font-family: $kbd-font-family;
+
+    kbd {
+        padding: 0;
+        font-weight: 600;
+    }
+}
+
+samp {
+    font-family: $samp-font-family;
+}
+
+mark {
+    display: inline-block;
+    background: $mark-background;
+    padding: $mark-padding;
+    color: $mark-color;
+}
+
+small {
+    font-size: $small-font-size;
+}
+
+sub,
+sup {
+    position: relative;
+    font-size: $sub-sup-font-size;
+    line-height: $sub-sup-line-height;
+    vertical-align: baseline;
+}
+
+sub {
+    bottom: $sub-bottom;
+}
+
+sup {
+    top: $sup-top;
+}

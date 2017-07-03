@@ -1,0 +1,40 @@
+{
+  "name": "gridi-framework-links-colors-helpers",
+  "description": "",
+  "main": "",
+  "authors": [
+    "Przemysław Dziadek <przemyslaw.dziadek@gmail.com>"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "css",
+    "scss",
+    "gridi",
+    "framework",
+    "colors",
+    "helpers",
+    "links"
+  ],
+  "homepage": "https://github.com/gridi-framework/gridi-framework-links-colors-helpers",
+  "ignore": [
+    "**/.*",
+    "**/*.md",
+    "**/*.js",
+    "**/*.json",
+    "node_modules",
+    "bower_components"
+  ],
+  "dependencies": {
+    "gridi-framework-core": "*",
+    "gridi-framework-links": "*"
+  },
+  "_release": "5870e18d87",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "5870e18d87585f4d836804ac5ef70d4be76553bf"
+  },
+  "_source": "https://github.com/gridi-framework/gridi-framework-links-colors-helpers.git",
+  "_target": "*",
+  "_originalSource": "gridi-framework-links-colors-helpers"
+}

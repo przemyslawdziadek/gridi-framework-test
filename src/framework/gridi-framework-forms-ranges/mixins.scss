@@ -1,0 +1,81 @@
+@mixin include-range-colors($thumb-border-color: null, $thumb-background: null, $track-background: null, $track-focus-background: null) {
+    //Range thumb
+    @if $thumb-border-color {
+        &::-webkit-slider-thumb {
+            border-color: $thumb-border-color;
+        }
+
+        &::-moz-range-thumb {
+            border-color: $thumb-border-color;
+        }
+
+        &::-ms-thumb {
+            border-color: $thumb-border-color;
+        }
+    }
+
+    @if $thumb-background {
+        &::-webkit-slider-thumb {
+            background: $thumb-background;
+        }
+
+        &::-moz-range-thumb {
+            background: $thumb-background;
+        }
+
+        &::-ms-thumb {
+            background: $thumb-background;
+        }
+    }
+
+    //Range track
+    @if $track-background {
+        &::-webkit-slider-runnable-track {
+            background: $track-background;
+        }
+
+        &::-moz-range-track {
+            background: $track-background;
+        }
+
+        &::-ms-fill-lower {
+            background: $track-background;
+        }
+
+        &::-ms-fill-upper {
+            background: $track-background;
+        }
+    }
+
+    @if $track-focus-background {
+        &:focus {
+            &::-webkit-slider-runnable-track {
+                background: $track-focus-background;
+            }
+
+            &::-moz-range-track {
+                background: $track-focus-background;
+            }
+
+            &::-ms-fill-lower {
+                background: $track-focus-background;
+            }
+
+            &::-ms-fill-upper {
+                background: $track-focus-background;
+            }
+        }
+    }
+}
+
+@mixin range-colors($thumb-border-color: null, $thumb-background: null, $track-background: null, $track-focus-background: null) {
+    input[type="range"] {
+        @include include-range-colors($thumb-border-color, $thumb-background, $track-background, $track-focus-background);
+    }
+}
+
+@mixin class-range-colors($class, $thumb-border-color: null, $thumb-background: null, $track-background: null, $track-focus-background: null) {
+    input[type="range"].#{$class} {
+        @include include-range-colors($thumb-border-color, $thumb-background, $track-background, $track-focus-background);
+    }
+}

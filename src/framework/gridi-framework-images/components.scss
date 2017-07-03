@@ -1,0 +1,45 @@
+img {
+    display: inline-block;
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    margin: $img-margin;
+    border: 0;
+    padding: 0;
+    vertical-align: middle;
+    -ms-interpolation-mode: bicubic;
+}
+
+figcaption,
+figure {
+    display: block;
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+
+figcaption {
+    margin: $figure-caption-margin;
+}
+
+figure {
+    margin: $figure-margin;
+
+    img {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    figcaption {
+        margin-bottom: 0;
+    }
+}
+
+canvas {
+    display: inline-block;
+    vertical-align: baseline;
+}
+
+svg:not(:root) {
+    overflow: hidden;
+}

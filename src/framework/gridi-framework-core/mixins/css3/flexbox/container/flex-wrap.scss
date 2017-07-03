@@ -1,0 +1,13 @@
+@mixin flex-wrap-old-browser($value) {
+    @if $value == nowrap {
+        -ms-flex-wrap: none;
+    }
+}
+
+@mixin flex-wrap($value: nowrap) {
+    -webkit-flex-wrap: $value;
+    -moz-flex-wrap: $value;
+    @include flex-wrap-old-browser($value);
+    -ms-flex-wrap: $value;
+    flex-wrap: $value;
+}

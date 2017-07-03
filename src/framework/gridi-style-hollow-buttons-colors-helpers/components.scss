@@ -1,0 +1,3 @@
+@each $palette-color-prefix, $palette-color-variables in get-colors-palette($hollow-buttons-colors-helpers-extra-colors-palette, $hollow-buttons-colors-helpers-skip-colors-palette) {
+    @include class-hollow-buttons-colors($palette-color-prefix, map-get($palette-color-variables, color), map-get($palette-color-variables, hover-color));
+}

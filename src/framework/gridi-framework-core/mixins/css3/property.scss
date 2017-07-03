@@ -1,0 +1,23 @@
+@mixin css3-property($property, $value) {
+    @include css3-webkit-property($property, $value);
+    @include css3-moz-property($property, $value);
+    @include css3-ms-property($property, $value);
+    @include css3-o-property($property, $value);
+    #{$property}: #{$value};
+}
+
+@mixin css3-webkit-property($property, $value) {
+    -webkit-#{$property}: #{$value};
+}
+
+@mixin css3-moz-property($property, $value) {
+    -moz-#{$property}: #{$value};
+}
+
+@mixin css3-ms-property($property, $value) {
+    -ms-#{$property}: #{$value};
+}
+
+@mixin css3-o-property($property, $value) {
+    -o-#{$property}: #{$value};
+}

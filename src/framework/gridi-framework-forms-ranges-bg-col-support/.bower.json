@@ -1,0 +1,43 @@
+{
+  "name": "gridi-framework-forms-ranges-bg-col-support",
+  "description": "",
+  "main": "",
+  "authors": [
+    "Przemysław Dziadek <przemyslaw.dziadek@gmail.com>"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "css",
+    "scss",
+    "gridi",
+    "framework",
+    "forms",
+    "ranges",
+    "background",
+    "colors",
+    "support"
+  ],
+  "homepage": "https://github.com/gridi-framework/gridi-framework-forms-ranges-bg-col-support",
+  "ignore": [
+    "**/.*",
+    "**/*.md",
+    "**/*.js",
+    "**/*.json",
+    "node_modules",
+    "bower_components"
+  ],
+  "dependencies": {
+    "gridi-framework-core": "*",
+    "gridi-framework-forms-ranges": "*",
+    "gridi-framework-background-colors-helpers": "*"
+  },
+  "_release": "1488a54832",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "1488a54832c6922fad83709f8f5b2e4f3739e93b"
+  },
+  "_source": "https://github.com/gridi-framework/gridi-framework-forms-ranges-bg-col-support.git",
+  "_target": "*",
+  "_originalSource": "gridi-framework-forms-ranges-bg-col-support"
+}

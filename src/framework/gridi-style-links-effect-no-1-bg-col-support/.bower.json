@@ -1,0 +1,44 @@
+{
+  "name": "gridi-style-links-effect-no-1-bg-col-support",
+  "description": "",
+  "main": "",
+  "authors": [
+    "Przemysław Dziadek <przemyslaw.dziadek@gmail.com>"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "css",
+    "scss",
+    "gridi",
+    "framework",
+    "links",
+    "effect",
+    "no-1",
+    "background",
+    "colors",
+    "support"
+  ],
+  "homepage": "https://github.com/gridi-style/gridi-style-links-effect-no-1-bg-col-support",
+  "ignore": [
+    "**/.*",
+    "**/*.md",
+    "**/*.js",
+    "**/*.json",
+    "node_modules",
+    "bower_components"
+  ],
+  "dependencies": {
+    "gridi-framework-core": "*",
+    "gridi-style-links-effect-no-1": "*",
+    "gridi-framework-background-colors-helpers": "*"
+  },
+  "_release": "f7e33bfe15",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "f7e33bfe15d87e487e66628e948f840cf8d49ec9"
+  },
+  "_source": "https://github.com/gridi-style/gridi-style-links-effect-no-1-bg-col-support.git",
+  "_target": "*",
+  "_originalSource": "gridi-style-links-effect-no-1-bg-col-support"
+}

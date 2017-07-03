@@ -1,0 +1,39 @@
+{
+  "name": "gridi-framework-thematic-break-line",
+  "description": "",
+  "main": "",
+  "authors": [
+    "Przemysław Dziadek <przemyslaw.dziadek@gmail.com>"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "css",
+    "scss",
+    "gridi",
+    "framework",
+    "thematic",
+    "break",
+    "line"
+  ],
+  "homepage": "https://github.com/gridi-framework/gridi-framework-thematic-break-line",
+  "ignore": [
+    "**/.*",
+    "**/*.md",
+    "**/*.js",
+    "**/*.json",
+    "node_modules",
+    "bower_components"
+  ],
+  "dependencies": {
+    "gridi-framework-core": "*"
+  },
+  "_release": "ada018d28d",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "ada018d28dc39bd3df1a58f371ef4a108008dfdc"
+  },
+  "_source": "https://github.com/gridi-framework/gridi-framework-thematic-break-line.git",
+  "_target": "*",
+  "_originalSource": "gridi-framework-thematic-break-line"
+}

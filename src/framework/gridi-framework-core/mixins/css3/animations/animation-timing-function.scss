@@ -1,0 +1,3 @@
+@mixin animation-timing-function($value: ease) {
+    @include css3-property(animation-timing-function, $value);
+}

@@ -1,0 +1,7 @@
+@mixin gradient($value) {
+    background: -webkit-#{$value};
+    background: -moz-#{$value};
+    background: -ms-#{$value};
+    background: -o-#{$value};
+    background: #{$value};
+}

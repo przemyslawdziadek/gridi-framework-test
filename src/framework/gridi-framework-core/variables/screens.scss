@@ -1,0 +1,42 @@
+$screens-sizes: (
+    s1: (
+        min: 480px,
+        max: 479px
+    ),
+    s2: (
+        min: 568px,
+        max: 567px
+    ),
+    s3: (
+        min: 700px,
+        max: 700px
+    ),
+    s4: (
+        min: 1024px,
+        max: 1023px
+    ),
+    s5: (
+        min: 1280px,
+        max: 1279px
+    ),
+    s6: (
+        min: 1366px,
+        max: 1365px
+    ),
+    s7: (
+        min: 1440px,
+        max: 1439px
+    ),
+    s8: (
+        min: 1600px,
+        max: 1599px
+    ),
+    s9: (
+        min: 1920px,
+        max: 1919px
+    ),
+    s10: (
+        min: 2560px,
+        max: 2559px
+    )
+) !default;

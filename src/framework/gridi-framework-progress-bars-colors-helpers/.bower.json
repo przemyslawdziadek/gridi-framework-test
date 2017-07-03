@@ -1,0 +1,40 @@
+{
+  "name": "gridi-framework-progress-bars-colors-helpers",
+  "description": "",
+  "main": "",
+  "authors": [
+    "Przemysław Dziadek <przemyslaw.dziadek@gmail.com>"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "css",
+    "scss",
+    "gridi",
+    "framework",
+    "colors",
+    "helpers",
+    "progress-bars"
+  ],
+  "homepage": "https://github.com/gridi-framework/gridi-framework-progress-bars-colors-helpers",
+  "ignore": [
+    "**/.*",
+    "**/*.md",
+    "**/*.js",
+    "**/*.json",
+    "node_modules",
+    "bower_components"
+  ],
+  "dependencies": {
+    "gridi-framework-core": "*",
+    "gridi-framework-progress-bars": "*"
+  },
+  "_release": "27dd6c381a",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "27dd6c381acffae6f2899b8ea1b7efaf555b8ae6"
+  },
+  "_source": "https://github.com/gridi-framework/gridi-framework-progress-bars-colors-helpers.git",
+  "_target": "*",
+  "_originalSource": "gridi-framework-progress-bars-colors-helpers"
+}

@@ -1,0 +1,54 @@
+//Blocks elements
+
+//Address
+$address-margin: $elements-margin !default;
+$address-font-style: normal !default;
+
+//Blockquote
+$blockquote-margin: $elements-margin-vertical 0 $elements-margin-vertical 1em !default;
+$blockquote-border-left: 2px solid $primary-color !default;
+$blockquote-padding: 0 0 0 1em !default;
+
+//cite
+$cite-prefix: "- " !default;
+$cite-font-size: 1em !default;
+$cite-font-style: italic !default;
+
+//Pre
+$pre-margin: $elements-margin !default;
+$pre-border: 1px solid get-color(grey, 400) !default;
+$pre-background: get-color(grey, 200) !default;
+$pre-padding: 10px !default;
+$pre-font-family: Consolas, "Liberation Mono", Courier, monospace !default;
+
+//Inline elements
+
+//Bold
+$bold-text-font-weight: 600 !default;
+
+//Code
+$code-font-family: $pre-font-family !default;
+$code-background: get-color(grey, 200) !default;
+$code-padding: $inline-background-elements-padding !default;
+
+//Kbd
+$kbd-font-family: $pre-font-family !default;
+$kbd-background: get-color(grey, 200) !default;
+$kbd-padding: $inline-background-elements-padding !default;
+
+//Samp
+$samp-font-family: $pre-font-family !default;
+
+//Mark
+$mark-background: $primary-color !default;
+$mark-padding: $inline-background-elements-padding !default;
+$mark-color: $primary-color-background-inner-color !default;
+
+//Small
+$small-font-size: 0.8em !default;
+
+//Sub | Sup
+$sub-sup-font-size: 0.8em !default;
+$sub-sup-line-height: normal !default;
+$sub-bottom: -0.25em !default;
+$sup-top: -0.5em !default;

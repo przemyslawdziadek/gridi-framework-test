@@ -1,0 +1,37 @@
+{
+  "name": "gridi-framework-semantics",
+  "description": "",
+  "main": "",
+  "authors": [
+    "Przemysław Dziadek <przemyslaw.dziadek@gmail.com>"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "css",
+    "scss",
+    "gridi",
+    "framework",
+    "semantics"
+  ],
+  "homepage": "https://github.com/gridi-framework/gridi-framework-semantics",
+  "ignore": [
+    "**/.*",
+    "**/*.md",
+    "**/*.js",
+    "**/*.json",
+    "node_modules",
+    "bower_components"
+  ],
+  "dependencies": {
+    "gridi-framework-core": "*"
+  },
+  "_release": "b0b4a2e573",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "b0b4a2e573f20d31901193ca162ae70e26859ffa"
+  },
+  "_source": "https://github.com/gridi-framework/gridi-framework-semantics.git",
+  "_target": "*",
+  "_originalSource": "gridi-framework-semantics"
+}

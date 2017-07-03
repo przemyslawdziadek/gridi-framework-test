@@ -1,0 +1,83 @@
+//Primary color
+$primary-color: get-color(blue) !default;
+$hover-primary-color: get-color(blue, 400) !default;
+//Text colors for usage primary color like a background for element
+$primary-color-background-inner-color: get-color(white) !default;
+$hover-primary-color-background-inner-color: get-color(white) !default;
+
+//Secondary color
+$secondary-color: get-color(grey) !default;
+$hover-secondary-color: get-color(grey, 400) !default;
+//Text colors for usage secondary color like a background for element
+$secondary-color-background-inner-color: get-color(white) !default;
+$hover-secondary-color-background-inner-color: get-color(white) !default;
+
+//Info color
+$info-color: get-color(light blue) !default;
+$hover-info-color: get-color(light blue, 400) !default;
+//Text colors for usage info color like a background for element
+$info-color-background-inner-color: get-color(white) !default;
+$hover-info-color-background-inner-color: get-color(white) !default;
+
+//Success color
+$success-color: get-color(green) !default;
+$hover-success-color: get-color(green, 400) !default;
+//Text colors for usage success color like a background for element
+$success-color-background-inner-color: get-color(white) !default;
+$hover-success-color-background-inner-color: get-color(white) !default;
+
+//Warning color
+$warning-color: get-color(amber) !default;
+$hover-warning-color: get-color(amber, 400) !default;
+//Text colors for usage warning color like a background for element
+$warning-color-background-inner-color: get-color(white) !default;
+$hover-warning-color-background-inner-color: get-color(white) !default;
+
+//Error color
+$error-color: get-color(red) !default;
+$hover-error-color: get-color(red, 400) !default;
+//Text colors for usage error color like a background for element
+$error-color-background-inner-color: get-color(white) !default;
+$hover-error-color-background-inner-color: get-color(white) !default;
+
+$colors-palette: (
+    primary: (
+        color: $primary-color,
+        hover-color: $hover-primary-color,
+        background-inner-color: $primary-color-background-inner-color,
+        hover-background-inner-color: $hover-primary-color-background-inner-color
+    ),
+    secondary: (
+        color: $secondary-color,
+        hover-color: $hover-secondary-color,
+        background-inner-color: $secondary-color-background-inner-color,
+        hover-background-inner-color: $hover-secondary-color-background-inner-color
+    ),
+    info: (
+        color: $info-color,
+        hover-color: $hover-info-color,
+        background-inner-color: $info-color-background-inner-color,
+        hover-background-inner-color: $hover-info-color-background-inner-color
+    ),
+    success: (
+        color: $success-color,
+        hover-color: $hover-success-color,
+        background-inner-color: $success-color-background-inner-color,
+        hover-background-inner-color: $hover-success-color-background-inner-color
+    ),
+    warning: (
+        color: $warning-color,
+        hover-color: $hover-warning-color,
+        background-inner-color: $warning-color-background-inner-color,
+        hover-background-inner-color: $hover-warning-color-background-inner-color
+    ),
+    error: (
+        color: $error-color,
+        hover-color: $hover-error-color,
+        background-inner-color: $error-color-background-inner-color,
+        hover-background-inner-color: $hover-error-color-background-inner-color
+    )
+);
+
+$extra-colors-palette: () !default;
+$skip-palette-colors: null !default; //list: success, error

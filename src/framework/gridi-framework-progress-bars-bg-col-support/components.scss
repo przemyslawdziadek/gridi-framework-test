@@ -1,0 +1,5 @@
+@each $palette-color-prefix, $palette-color-variables in get-background-colors-palette($progress-bars-background-colors-support-extra-colors-palette, $progress-bars-background-colors-support-skip-colors-palette) {
+    .#{$background-colors-helpers-class-prefix}#{$palette-color-prefix} {
+        @include progress-bars-colors(rgba(map-get($palette-color-variables, background-inner-color), $progress-bars-background-colors-support-background-opacity), map-get($palette-color-variables, background-inner-color), map-get($palette-color-variables, color));
+    }
+}

@@ -1,0 +1,33 @@
+@mixin links-style() {
+    a, .link {
+        @content;
+    }
+}
+
+@mixin class-links-style($class) {
+    a, .link {
+        &.#{$class} {
+            @content;
+        }
+    }
+}
+
+@mixin include-links-colors($color, $hover-color) {
+    color: $color;
+
+    &:hover, &:focus {
+        color: $hover-color;
+    }
+}
+
+@mixin links-colors($color, $hover-color) {
+    @include links-style() {
+        @include include-links-colors($color, $hover-color);
+    }
+}
+
+@mixin class-links-colors($class, $color, $hover-color) {
+    @include class-links-style($class) {
+        @include include-links-colors($color, $hover-color);
+    }
+}

@@ -1,0 +1,21 @@
+//Number of columns in the grid.
+$grid-columns: 12 !default;
+
+//Padding between columns. Gets divided in half for the left and right.
+$grid-gutter: 30px !default;
+//Defined padding between columns for each screens.
+/*
+$grid-gutter-for-screens: (
+    s1: 40px,
+    ...
+) !default;
+*/
+//Container sizes
+$grid-container-max-width: 1920px !default;
+//Defined container sizes for each screens.
+/*
+$grid-container-max-width-for-screens: (
+    s1: 1940px,
+    ...
+) !default;
+*/

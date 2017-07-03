@@ -1,0 +1,19 @@
+@mixin border-radius($value: 0) {
+    @include css3-property(border-radius, $value);
+}
+
+@mixin border-top-left-radius($value: 0) {
+    @include css3-property(border-top-left-radius, $value);
+}
+
+@mixin border-top-right-radius($value: 0) {
+    @include css3-property(border-top-right-radius, $value);
+}
+
+@mixin border-bottom-right-radius($value: 0) {
+    @include css3-property(border-bottom-right-radius, $value);
+}
+
+@mixin border-bottom-left-radius($value: 0) {
+    @include css3-property(border-bottom-left-radius, $value);
+}

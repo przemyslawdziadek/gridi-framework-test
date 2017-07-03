@@ -1,0 +1,3 @@
+@mixin transition-timing-function($value: ease) {
+    @include css3-property(transition-timing-function, $value);
+}

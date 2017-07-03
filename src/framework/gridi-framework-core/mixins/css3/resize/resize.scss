@@ -1,0 +1,3 @@
+@mixin resize($value: both) {
+    @include css3-property(resize, $value);
+}

@@ -1,0 +1,93 @@
+@mixin include-progress-colors($background, $meter-background) {
+    background: $background;
+    color: $meter-background;
+
+    &::-webkit-progress-bar {
+        background: $background;
+    }
+
+    &::-moz-progress-value {
+        background: $background;
+    }
+
+    &::-webkit-progress-value {
+        background: $meter-background;
+    }
+
+    &::-moz-progress-bar {
+        background: $meter-background;
+    }
+}
+
+@mixin include-meter-colors($background, $meter-background) {
+    background: $background;
+
+    &::-webkit-meter-bar {
+        background: $background;
+    }
+
+    &::-moz-meter-bar {
+        background: $background;
+    }
+
+    &::-webkit-meter-optimum-value,
+    &::-webkit-meter-suboptimum-value,
+    &::-webkit-meter-even-less-good-value {
+        background: $meter-background;
+    }
+
+    &:-moz-meter-optimum::-moz-meter-bar,
+    &:-moz-meter-sub-optimum::-moz-meter-bar,
+    &:-moz-meter-sub-sub-optimum::-moz-meter-bar {
+        background: $meter-background;
+    }
+
+}
+
+@mixin progress-bars-colors($background, $meter-background, $color) {
+    meter, progress, .progress {
+        background: $background;
+    }
+
+    .progress .progress-meter {
+        background: $meter-background;
+
+        .progress-meter-text {
+            color: $color;
+        }
+    }
+
+    progress {
+        color: $meter-background;
+        @include include-progress-colors($background, $meter-background);
+
+    }
+
+    meter {
+        @include include-meter-colors($background, $meter-background);
+    }
+}
+
+@mixin class-progress-bars-colors($class, $background, $meter-background, $color) {
+    meter, progress, .progress {
+        &.#{$class} {
+            background: $background;
+        }
+    }
+
+    .progress.#{$class} .progress-meter {
+        background: $meter-background;
+
+        .progress-meter-text {
+            color: $color;
+        }
+    }
+
+    progress.#{$class} {
+        @include include-progress-colors($background, $meter-background);
+    }
+
+    meter.#{$class} {
+        @include include-meter-colors($background, $meter-background);
+    }
+}

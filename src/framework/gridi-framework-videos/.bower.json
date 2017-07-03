@@ -1,0 +1,35 @@
+{
+  "name": "gridi-framework-videos",
+  "description": "",
+  "main": "",
+  "authors": [
+    "Przemysław Dziadek <przemyslaw.dziadek@gmail.com>"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "css",
+    "scss",
+    "gridi",
+    "framework",
+    "video",
+    "videos"
+  ],
+  "homepage": "https://github.com/gridi-framework/gridi-framework-videos",
+  "ignore": [
+    "**/.*",
+    "**/*.md",
+    "**/*.js",
+    "**/*.json",
+    "node_modules",
+    "bower_components"
+  ],
+  "_release": "509cbd2823",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "509cbd2823c8e7bcfaa331d8528c2f482f028037"
+  },
+  "_source": "https://github.com/gridi-framework/gridi-framework-videos.git",
+  "_target": "*",
+  "_originalSource": "gridi-framework-videos"
+}

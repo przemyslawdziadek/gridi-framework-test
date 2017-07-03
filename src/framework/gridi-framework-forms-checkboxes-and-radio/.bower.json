@@ -1,0 +1,40 @@
+{
+  "name": "gridi-framework-forms-checkboxes-and-radio",
+  "description": "",
+  "main": "",
+  "authors": [
+    "Przemysław Dziadek <przemyslaw.dziadek@gmail.com>"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "css",
+    "scss",
+    "gridi",
+    "framework",
+    "forms",
+    "checkboxes",
+    "radio"
+  ],
+  "homepage": "https://github.com/gridi-framework/gridi-framework-forms-checkboxes-and-radio",
+  "ignore": [
+    "**/.*",
+    "**/*.md",
+    "**/*.js",
+    "**/*.json",
+    "node_modules",
+    "bower_components"
+  ],
+  "dependencies": {
+    "gridi-framework-core": "*",
+    "gridi-framework-forms-core": "*"
+  },
+  "_release": "0bf22b5f63",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "0bf22b5f63b5b7752cad32cd7a381e1a15dcd051"
+  },
+  "_source": "https://github.com/gridi-framework/gridi-framework-forms-checkboxes-and-radio.git",
+  "_target": "*",
+  "_originalSource": "gridi-framework-forms-checkboxes-and-radio"
+}

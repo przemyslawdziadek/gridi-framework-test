@@ -1,0 +1,40 @@
+{
+  "name": "gridi-style-hollow-buttons",
+  "description": "",
+  "main": "",
+  "authors": [
+    "Przemysław Dziadek <przemyslaw.dziadek@gmail.com>"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "css",
+    "scss",
+    "gridi",
+    "framework",
+    "button",
+    "buttons",
+    "hollow"
+  ],
+  "homepage": "https://github.com/gridi-style/gridi-style-hollow-buttons",
+  "ignore": [
+    "**/.*",
+    "**/*.md",
+    "**/*.js",
+    "**/*.json",
+    "node_modules",
+    "bower_components"
+  ],
+  "dependencies": {
+    "gridi-framework-core": "*",
+    "gridi-framework-buttons-core": "*"
+  },
+  "_release": "77919346db",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "77919346db6c0de5add6cb5ef20a06725da915e3"
+  },
+  "_source": "https://github.com/gridi-style/gridi-style-hollow-buttons.git",
+  "_target": "*",
+  "_originalSource": "gridi-style-hollow-buttons"
+}

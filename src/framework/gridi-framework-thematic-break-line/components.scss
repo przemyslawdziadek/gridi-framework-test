@@ -1,0 +1,10 @@
+hr {
+    display: block;
+    width: $hr-width-size;
+    height: $hr-height-size;
+    margin: $hr-margin;
+    border: 0;
+    padding: 0;
+    background-color: $hr-color;
+    @include box-sizing(content-box);
+}

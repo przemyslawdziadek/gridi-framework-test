@@ -1,0 +1,35 @@
+@mixin include-table-colors($border-color, $background, $color) {
+    border-color: $border-color;
+
+    caption {
+        color: $color;
+    }
+
+    th, td {
+        border-color: $border-color;
+    }
+
+    th,
+    tr:nth-child(even) td,
+    &.hover tr:hover th,
+    &.hover tr:hover td {
+        background-color: $color;
+        color: $background;
+    }
+
+    &.unstriped tr:nth-child(even) td {
+        color: inherit;
+    }
+}
+
+@mixin table-colors($border-color, $background, $color) {
+    table {
+        @include include-table-colors($border-color, $background, $color);
+    }
+}
+
+@mixin class-table-colors($class, $border-color, $background, $color) {
+    table.#{$class} {
+        @include include-table-colors($border-color, $background, $color);
+    }
+}

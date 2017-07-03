@@ -1,0 +1,15 @@
+@mixin include-hr-color($color) {
+    background-color: $color;
+}
+
+@mixin hr-color($color) {
+    hr {
+        @include include-hr-color($color);
+    }
+}
+
+@mixin class-hr-color($class, $color) {
+    hr.#{$class} {
+        @include include-hr-color($color);
+    }
+}

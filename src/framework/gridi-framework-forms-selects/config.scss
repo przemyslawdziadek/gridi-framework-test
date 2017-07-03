@@ -1,0 +1,16 @@
+//Select
+$select-height: 3em !default;
+$select-border: 1px solid get-color(grey, 400) !default;
+$select-focus-border-color: $primary-color !default;
+$select-padding: 0 10px !default;
+
+$select-disabled-background: get-color(grey, 100) !default;
+
+$select-arrow-color-rgb: '189, 189, 189' !default;
+
+//Select multiple
+$select-multiple-padding: 10px !default;
+$select-multiple-option-padding: 10px !default;
+$select-multiple-option-checked-background: get-color(grey, 400) !default;
+$select-multiple-focus-option-checked-background: $primary-color !default;
+$select-multiple-option-checked-color: $primary-color-background-inner-color !default;

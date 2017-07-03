@@ -1,0 +1,3 @@
+@mixin object-position($value) {
+    @include css3-property(object-position, $value);
+}

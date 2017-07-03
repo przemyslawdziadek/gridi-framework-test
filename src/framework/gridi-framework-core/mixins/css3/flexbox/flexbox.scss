@@ -1,0 +1,29 @@
+/*
+ * Sass Flexbox Mixins
+ *
+ * @copyright Przemysław Dziadek <przemyslaw.dziadek@gmail.com>
+ */
+
+ @mixin supports-flex {
+     @supports ( (display: -webkit-box) or (display: -moz-box) or (display: -webkit-flexbox) or (display: -moz-flexbox) or (display: -webkit-flex) or (display: -moz-flex) or (display: -ms-flexbox) or (display: -ms-flex) or (display: flex) ) {
+         @content;
+     }
+ }
+ 
+//Mixins for the Parent
+@import 'container/display-flex';
+
+@import 'container/flex-direction';
+@import 'container/flex-wrap';
+@import 'container/flex-flow';
+@import 'container/justify-content';
+@import 'container/align-items';
+@import 'container/align-content';
+
+//Mixins for the Items
+@import 'item/align-self';
+@import 'item/order';
+@import 'item/flex-grow';
+@import 'item/flex-shrink';
+@import 'item/flex-basis';
+@import 'item/flex';

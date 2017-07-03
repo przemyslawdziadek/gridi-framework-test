@@ -1,0 +1,37 @@
+{
+  "name": "gridi-framework-links",
+  "description": "",
+  "main": "",
+  "authors": [
+    "Przemysław Dziadek <przemyslaw.dziadek@gmail.com>"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "css",
+    "scss",
+    "gridi",
+    "framework",
+    "links"
+  ],
+  "homepage": "https://github.com/gridi-framework/gridi-framework-links",
+  "ignore": [
+    "**/.*",
+    "**/*.md",
+    "**/*.js",
+    "**/*.json",
+    "node_modules",
+    "bower_components"
+  ],
+  "dependencies": {
+    "gridi-framework-core": "*"
+  },
+  "_release": "929b27a0b8",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "929b27a0b8d76efc5cb23da703307895f5c45fe4"
+  },
+  "_source": "https://github.com/gridi-framework/gridi-framework-links.git",
+  "_target": "*",
+  "_originalSource": "gridi-framework-links"
+}

@@ -1,0 +1,37 @@
+.hide {
+    display: none;
+}
+
+@if $display-helpers-generate-screens-helper-classes {
+    $before-screen-prefix: null;
+
+    @each $screen-prefix, $sizes in map-reverse(get-screens-map()) {
+        @media(min-width: get-screen-size($screen-prefix, min)) {
+            .hide-from-#{$screen-prefix} {
+                display: none;
+            }
+
+            @if not $before-screen-prefix {
+                .hide-#{$screen-prefix} {
+                    display: none;
+                }
+            }
+        }
+
+        @media(max-width: get-screen-size($screen-prefix, max)) {
+            .hide-to-#{$screen-prefix} {
+                display: none;
+            }
+        }
+
+        @if $before-screen-prefix {
+            @media(min-width: get-screen-size($screen-prefix, min)) and (max-width: get-screen-size($before-screen-prefix, max)) {
+                .hide-#{$screen-prefix} {
+                    display: none;
+                }
+            }
+        }
+
+        $before-screen-prefix: $screen-prefix;
+    }
+}

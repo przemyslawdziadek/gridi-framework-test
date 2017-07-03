@@ -1,0 +1,42 @@
+{
+  "name": "gridi-framework-progress-bars-bg-col-support",
+  "description": "",
+  "main": "",
+  "authors": [
+    "Przemysław Dziadek <przemyslaw.dziadek@gmail.com>"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "css",
+    "scss",
+    "gridi",
+    "framework",
+    "progress-bars",
+    "background",
+    "colors",
+    "support"
+  ],
+  "homepage": "https://github.com/gridi-framework/gridi-framework-progress-bars-bg-col-support",
+  "ignore": [
+    "**/.*",
+    "**/*.md",
+    "**/*.js",
+    "**/*.json",
+    "node_modules",
+    "bower_components"
+  ],
+  "dependencies": {
+    "gridi-framework-core": "*",
+    "gridi-framework-progress-bars": "*",
+    "gridi-framework-background-colors-helpers": "*"
+  },
+  "_release": "278e0fb42c",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "278e0fb42c9a7b644484e2e3e3c1a91e94cd6371"
+  },
+  "_source": "https://github.com/gridi-framework/gridi-framework-progress-bars-bg-col-support.git",
+  "_target": "*",
+  "_originalSource": "gridi-framework-progress-bars-bg-col-support"
+}

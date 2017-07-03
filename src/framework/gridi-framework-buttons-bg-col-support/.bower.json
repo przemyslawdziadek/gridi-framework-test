@@ -1,0 +1,42 @@
+{
+  "name": "gridi-framework-buttons-bg-col-support",
+  "description": "",
+  "main": "",
+  "authors": [
+    "Przemysław Dziadek <przemyslaw.dziadek@gmail.com>"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "css",
+    "scss",
+    "gridi",
+    "framework",
+    "buttons",
+    "background",
+    "colors",
+    "support"
+  ],
+  "homepage": "https://github.com/gridi-framework/gridi-framework-buttons-bg-col-support",
+  "ignore": [
+    "**/.*",
+    "**/*.md",
+    "**/*.js",
+    "**/*.json",
+    "node_modules",
+    "bower_components"
+  ],
+  "dependencies": {
+    "gridi-framework-core": "*",
+    "gridi-framework-buttons": "*",
+    "gridi-framework-background-colors-helpers": "*"
+  },
+  "_release": "1461fd0673",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "1461fd0673b15f5058948a6eed1c16dc416dc5b4"
+  },
+  "_source": "https://github.com/gridi-framework/gridi-framework-buttons-bg-col-support.git",
+  "_target": "*",
+  "_originalSource": "gridi-framework-buttons-bg-col-support"
+}

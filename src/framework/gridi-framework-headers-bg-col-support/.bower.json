@@ -1,0 +1,42 @@
+{
+  "name": "gridi-framework-headers-bg-col-support",
+  "description": "",
+  "main": "",
+  "authors": [
+    "Przemysław Dziadek <przemyslaw.dziadek@gmail.com>"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "css",
+    "scss",
+    "gridi",
+    "framework",
+    "headers",
+    "background",
+    "colors",
+    "support"
+  ],
+  "homepage": "https://github.com/gridi-framework/gridi-framework-headers-bg-col-support",
+  "ignore": [
+    "**/.*",
+    "**/*.md",
+    "**/*.js",
+    "**/*.json",
+    "node_modules",
+    "bower_components"
+  ],
+  "dependencies": {
+    "gridi-framework-core": "*",
+    "gridi-framework-headers": "*",
+    "gridi-framework-background-colors-helpers": "*"
+  },
+  "_release": "4b9c587993",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "4b9c58799380bc1f78bf65f1505396d57278203e"
+  },
+  "_source": "https://github.com/gridi-framework/gridi-framework-headers-bg-col-support.git",
+  "_target": "*",
+  "_originalSource": "gridi-framework-headers-bg-col-support"
+}

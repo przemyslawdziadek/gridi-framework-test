@@ -1,0 +1,76 @@
+//tranform-style
+@mixin transform-style($value: flat) {
+    @include css3-property(transform-style, $value);
+}
+
+//perspective
+@mixin perspective($value: none) {
+    @include css3-property(perspective, $value);
+}
+
+//perspective-origin
+@mixin perspective-origin($value) {
+    @include css3-property(perspective-origin, $value);
+}
+
+//backface-visibility
+@mixin backface-visibility($value: visible) {
+    @include css3-property(backface-visibility, $value);
+}
+
+//transforms
+@mixin transform-3d-matrix3d($value) {
+	@include transform(matrix3d(#{$value}));
+}
+
+@mixin transform-3d-translate3d($value) {
+	@include transform(translate3d(#{$value}));
+}
+
+@mixin transform-3d-translateX($value) {
+	@include transform(translateX(#{$value}));
+}
+
+@mixin transform-3d-translateY($value) {
+	@include transform(translateY(#{$value}));
+}
+
+@mixin transform-3d-translateZ($value) {
+	@include transform(translateZ(#{$value}));
+}
+
+@mixin transform-3d-scale3d($value) {
+	@include transform(scale3d(#{$value}));
+}
+
+@mixin transform-3d-scaleX($value) {
+	@include transform(scaleX(#{$value}));
+}
+
+@mixin transform-3d-scaleY($value) {
+	@include transform(scaleY(#{$value}));
+}
+
+@mixin transform-3d-scaleZ($value) {
+	@include transform(scaleZ(#{$value}));
+}
+
+@mixin transform-3d-rotate3d($value) {
+	@include transform(rotate3d(#{$value}));
+}
+
+@mixin transform-3d-rotateX($value) {
+	@include transform(rotateX(#{$value}));
+}
+
+@mixin transform-3d-rotateY($value) {
+	@include transform(rotateY(#{$value}));
+}
+
+@mixin transform-3d-rotateZ($value) {
+	@include transform(rotateZ(#{$value}));
+}
+
+@mixin transform-3d-perspective($value) {
+	@include transform(perspective(#{$value}));
+}

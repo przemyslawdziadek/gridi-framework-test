@@ -1,0 +1,23 @@
+@mixin border-image($value) {
+    @include css3-property(border-image, $value);
+}
+
+@mixin border-image-source($value) {
+    @include css3-property(border-image-source, $value);
+}
+
+@mixin border-image-slice($value) {
+    @include css3-property(border-image-slice, $value);
+}
+
+@mixin border-image-width($value) {
+    @include css3-property(border-image-width, $value);
+}
+
+@mixin border-image-outset($value) {
+    @include css3-property(border-image-outset, $value);
+}
+
+@mixin border-image-repeat($value) {
+    @include css3-property(border-image-repeat, $value);
+}

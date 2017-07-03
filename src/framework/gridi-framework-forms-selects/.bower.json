@@ -1,0 +1,39 @@
+{
+  "name": "gridi-framework-forms-selects",
+  "description": "",
+  "main": "",
+  "authors": [
+    "Przemysław Dziadek <przemyslaw.dziadek@gmail.com>"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "css",
+    "scss",
+    "gridi",
+    "framework",
+    "forms",
+    "selects"
+  ],
+  "homepage": "https://github.com/gridi-framework/gridi-framework-forms-selects",
+  "ignore": [
+    "**/.*",
+    "**/*.md",
+    "**/*.js",
+    "**/*.json",
+    "node_modules",
+    "bower_components"
+  ],
+  "dependencies": {
+    "gridi-framework-core": "*",
+    "gridi-framework-forms-core": "*"
+  },
+  "_release": "db93e4c3d2",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "db93e4c3d20088af8675622748e2c17fc5b6617a"
+  },
+  "_source": "https://github.com/gridi-framework/gridi-framework-forms-selects.git",
+  "_target": "*",
+  "_originalSource": "gridi-framework-forms-selects"
+}

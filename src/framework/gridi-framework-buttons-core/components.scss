@@ -1,0 +1,35 @@
+button {
+    font: inherit;
+    text-transform: none;
+    @include appearance(none);
+}
+
+@include buttons-style() {
+    cursor: pointer;
+    display: inline-block;
+    overflow: visible;
+    margin: 0;
+    border: 0;
+    background: transparent;
+    outline: 0;
+    padding: $button-padding;
+    line-height: $document-line-height;
+    text-align: center;
+    text-decoration: none;
+    letter-spacing: $button-letter-spacing;
+    -webkit-tap-highlight-color: transparent;
+    @include transition($button-transition);
+
+    &.clear {
+        border: 0 !important;
+        outline: 0 !important;
+        background: transparent !important;
+        color: inherit !important;
+    }
+
+    &.disabled,
+    &[disabled] {
+        cursor: default;
+        @include opacity($button-disabled-opacity);
+    }
+}

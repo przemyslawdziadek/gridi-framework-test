@@ -1,0 +1,93 @@
+.container-full,
+.container {
+    display: block;
+    margin: 0 auto;
+    padding-left: floor(($grid-gutter / 2));
+    padding-right: ceil(($grid-gutter / 2));
+    @if variable-exists(grid-gutter-for-screens) {
+        @each $screen-prefix, $sizes in get-screens-map() {
+            @if map-has-key($grid-gutter-for-screens, $screen-prefix) {
+                @media(min-width: get-screen-size($screen-prefix, min)) {
+                    padding: 0 ceil((map-get($grid-gutter-for-screens, $screen-prefix) / 2)) 0 floor((map-get($grid-gutter-for-screens, $screen-prefix) / 2));
+                }
+            }
+        }
+    }
+}
+
+.container {
+    max-width: $grid-container-max-width;
+    @if variable-exists(grid-container-max-width-for-screens) {
+        @each $screen-prefix, $sizes in get-screens-map() {
+            @if map-has-key($grid-container-max-width-for-screens, $screen-prefix) {
+                @media(min-width: get-screen-size($screen-prefix, min)) {
+                    max-width: map-get($grid-container-max-width-for-screens, $screen-prefix);
+                }
+            }
+        }
+    }
+}
+
+.containers-to-full .container {
+    max-width: none;
+}
+
+.row {
+    display: block;
+    margin: auto floor(($grid-gutter / -2)) auto ceil(($grid-gutter / -2));
+    @if variable-exists(grid-gutter-for-screens) {
+        @each $screen-prefix, $sizes in get-screens-map() {
+            @if map-has-key($grid-gutter-for-screens, $screen-prefix) {
+                @media(min-width: get-screen-size($screen-prefix, min)) {
+                    margin: auto floor((map-get($grid-gutter-for-screens, $screen-prefix) / -2)) auto ceil((map-get($grid-gutter-for-screens, $screen-prefix) / -2));
+                }
+            }
+        }
+    }
+
+    &:before,
+    &:after {
+        content: " ";
+        display: table;
+        width: 100%;
+    }
+
+    &:after {
+        clear: both;
+    }
+}
+
+.column {
+    display: block;
+    float: left;
+    width: auto;
+    min-height: 1px;
+    padding-left: ceil(($grid-gutter / 2));
+    padding-right: floor(($grid-gutter / 2));
+    @if variable-exists(grid-gutter-for-screens) {
+        @each $screen-prefix, $sizes in get-screens-map() {
+            @if map-has-key($grid-gutter-for-screens, $screen-prefix) {
+                @media(min-width: get-screen-size($screen-prefix, min)) {
+                    padding-left: ceil((map-get($grid-gutter-for-screens, $screen-prefix)) / 2);
+                    padding-right: floor((map-get($grid-gutter-for-screens, $screen-prefix) / 2));
+                }
+            }
+        }
+    }
+}
+
+//Make columns sizes
+@for $i from 1 through $grid-columns {
+    .column-#{$i} {
+        width: percentage($i/$grid-columns);
+    }
+}
+@each $screen-prefix, $sizes in get-screens-map() {
+    @media(min-width: get-screen-size($screen-prefix, min)) {
+        @for $i from 1 through $grid-columns {
+            .column-#{$screen-prefix}-#{$i} {
+                width: percentage($i/$grid-columns);
+            }
+        }
+    }
+}

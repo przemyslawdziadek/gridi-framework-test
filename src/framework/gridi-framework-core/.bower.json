@@ -1,0 +1,34 @@
+{
+  "name": "gridi-framework-core",
+  "description": "",
+  "main": "",
+  "authors": [
+    "Przemysław Dziadek <przemyslaw.dziadek@gmail.com>"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "css",
+    "scss",
+    "gridi",
+    "framework",
+    "core"
+  ],
+  "homepage": "https://github.com/gridi-framework/gridi-framework-core",
+  "ignore": [
+    "**/.*",
+    "**/*.md",
+    "**/*.js",
+    "**/*.json",
+    "node_modules",
+    "bower_components"
+  ],
+  "_release": "040add5f0e",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "040add5f0e380ed67cb5dc4ac0d39a058db2774e"
+  },
+  "_source": "https://github.com/gridi-framework/gridi-framework-core.git",
+  "_target": "*",
+  "_originalSource": "gridi-framework-core"
+}

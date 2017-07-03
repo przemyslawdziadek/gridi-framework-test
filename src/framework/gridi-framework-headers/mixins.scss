@@ -1,0 +1,17 @@
+@mixin include-h1-h6-color($color) {
+    color: $color;
+}
+
+@mixin h1-h6-color($color) {
+    h1, h2, h3, h4, h5, h6 {
+        @include include-h1-h6-color($color);
+    }
+}
+
+@mixin class-h1-h6-color($class, $color) {
+    h1, h2, h3, h4, h5, h6 {
+        &.#{$class} {
+            @include include-h1-h6-color($color);
+        }
+    }
+}

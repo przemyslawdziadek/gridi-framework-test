@@ -1,0 +1,6 @@
+@each $palette-color-prefix, $palette-color-variables in get-background-colors-palette($selects-background-colors-support-extra-colors-palette, $selects-background-colors-support-skip-colors-palette) {
+    .#{$background-colors-helpers-class-prefix}#{$palette-color-prefix} {
+        @include select-colors(map-get($palette-color-variables, background-inner-color), map-get($palette-color-variables, background-inner-color), map-get($palette-color-variables, background-inner-color), map-get($palette-color-variables, color));
+        @include select-focus-multiple-option-checked-background(map-get($palette-color-variables, color));
+    }
+}

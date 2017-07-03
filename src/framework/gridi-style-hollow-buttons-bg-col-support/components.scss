@@ -1,0 +1,5 @@
+@each $palette-color-prefix, $palette-color-variables in get-background-colors-palette($hollow-buttons-background-colors-support-extra-colors-palette, $hollow-buttons-background-colors-support-skip-colors-palette) {
+    .#{$background-colors-helpers-class-prefix}#{$palette-color-prefix} {
+        @include hollow-buttons-colors( map-get($palette-color-variables, background-inner-color), map-get($palette-color-variables, background-inner-color));
+    }
+}

@@ -1,0 +1,5 @@
+@each $palette-color-prefix, $palette-color-variables in get-background-colors-palette($buttons-background-colors-support-extra-colors-palette, $buttons-background-colors-support-skip-colors-palette) {
+    .#{$background-colors-helpers-class-prefix}#{$palette-color-prefix} {
+        @include buttons-colors( map-get($palette-color-variables, background-inner-color), map-get($palette-color-variables, color), map-get($palette-color-variables, hover-background-inner-color), map-get($palette-color-variables, hover-color));
+    }
+}

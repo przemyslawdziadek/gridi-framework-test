@@ -1,0 +1,40 @@
+{
+  "name": "gridi-framework-buttons-colors-helpers",
+  "description": "",
+  "main": "",
+  "authors": [
+    "Przemysław Dziadek <przemyslaw.dziadek@gmail.com>"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "css",
+    "scss",
+    "gridi",
+    "framework",
+    "colors",
+    "helpers",
+    "buttons"
+  ],
+  "homepage": "https://github.com/gridi-framework/gridi-framework-buttons-colors-helpers",
+  "ignore": [
+    "**/.*",
+    "**/*.md",
+    "**/*.js",
+    "**/*.json",
+    "node_modules",
+    "bower_components"
+  ],
+  "dependencies": {
+    "gridi-framework-core": "*",
+    "gridi-framework-buttons": "*"
+  },
+  "_release": "7cd4ecd8de",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "7cd4ecd8de5159b22494470bd3d3d9bbab284044"
+  },
+  "_source": "https://github.com/gridi-framework/gridi-framework-buttons-colors-helpers.git",
+  "_target": "*",
+  "_originalSource": "gridi-framework-buttons-colors-helpers"
+}

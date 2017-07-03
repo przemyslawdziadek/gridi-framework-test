@@ -1,0 +1,3 @@
+@mixin column-span($value) {
+    @include css3-property(column-span, $value);
+}

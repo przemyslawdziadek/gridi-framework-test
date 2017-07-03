@@ -1,0 +1,35 @@
+ul, ol, li, dl, dt, dd {
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+
+ul, ol {
+    margin: $ul-ol-margin;
+    padding: 0 0 0 $ul-ol-padding-left;
+
+    ul, ol {
+        margin: 0;
+    }
+
+    li {
+        margin: $li-margin;
+    }
+}
+
+ul {
+    list-style-type: disc;
+}
+
+dl {
+    margin: $dl-margin;
+}
+
+dt {
+    margin: $dt-margin;
+    font-weight: bold;
+}
+
+dd {
+    margin-bottom: $dd-margin;
+}

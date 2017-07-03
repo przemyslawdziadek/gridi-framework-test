@@ -1,0 +1,45 @@
+th, td, caption {
+    padding: $table-column-padding
+}
+
+th, td {
+    border: $table-column-border;
+    border-spacing: 0;
+}
+
+th {
+    background: $th-background;
+    font-weight: bold;
+    text-align: left;
+}
+
+tr:nth-child(even) td {
+    background: $td-odd-background;
+}
+
+caption {
+    text-align: center;
+    color: $caption-color;
+}
+
+table {
+    width: 100%;
+    margin: $table-margin;
+    border: $table-column-border;
+    border-collapse: collapse;
+    border-spacing: 0;
+
+    &.hover {
+        tr:hover {
+            th, td {
+                background: $table-hover-row-background;
+            }
+        }
+    }
+
+    &.unstriped {
+        td {
+            background: transparent !important;
+        }
+    }
+}

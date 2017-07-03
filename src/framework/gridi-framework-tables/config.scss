@@ -1,0 +1,16 @@
+//Table
+$table-margin: $elements-margin !default;
+$table-column-border: 1px solid transparent !default;
+$table-column-padding: 0.85em 1em !default;
+
+//Table hover
+$table-hover-row-background: get-color(grey, 300) !default;
+
+//Caption
+$caption-color: $primary-color !default;
+
+//Th
+$th-background: get-color(grey, 200) !default;
+
+//Td
+$td-odd-background: $th-background !default;

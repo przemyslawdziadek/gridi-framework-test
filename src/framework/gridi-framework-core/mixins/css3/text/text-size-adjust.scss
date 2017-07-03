@@ -1,0 +1,3 @@
+@mixin text-size-adjust($value: auto) {
+    @include css3-property(text-size-adjust, $value);
+}
